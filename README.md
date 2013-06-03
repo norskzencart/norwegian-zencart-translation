@@ -87,22 +87,22 @@ De norske fylkene, men de er ikke påkrevd eller nødvendige dersom man ikke set
 
 ##### Sonedefinasjoner
 
-Norge / Innenlands / Alle soner
-Svalbard og Jan Mayen / Svalbard og Jan Mayen / Alle soner
-Utland - Norden / De nordiske landene / Aaland, Danmark, Finland, Island og Sverige
+* Norge / Innenlands / Alle soner
+* Svalbard og Jan Mayen / Svalbard og Jan Mayen / Alle soner
+* Utland - Norden / De nordiske landene / Aaland, Danmark, Finland, Island og Sverige
 
 ##### Avgiftsklasser
 
-Høy sats 25% / 25% Norsk moms (generell)
-Middels sats 15% / 15% Norsk moms
-Lav sats 8% / 8% Norsk moms
-Skattefritt salg / Skattefritt salg til utland, Svalbard og Jan Mayen
+* Høy sats 25% / 25% Norsk moms (generell)
+* Middels sats 15% / 15% Norsk moms
+* Lav sats 8% / 8% Norsk moms
+* Skattefritt salg / Skattefritt salg til utland, Svalbard og Jan Mayen
 
 ##### Avgiftsrater
 
-Høy sats 25% / Norge / 25% / 25% MVA er inkl. med
-Middels sats 15% / Norge / 15% / 15% MVA er inkl. med
-Lav sats 8% / Norge / 8% / 8% MVA er inkl. med
-Skattefritt salg / Svalbard og Jan Mayen / 0% / Skattefritt salg Svalbard og Jan Mayen
-Skattefritt salg / Utland - Norden / 0% / Skattefritt salg utland
+* Høy sats 25% / Norge / 25% / 25% MVA er inkl. med
+* Middels sats 15% / Norge / 15% / 15% MVA er inkl. med
+* Lav sats 8% / Norge / 8% / 8% MVA er inkl. med
+* Skattefritt salg / Svalbard og Jan Mayen / 0% / Skattefritt salg Svalbard og Jan Mayen
+* Skattefritt salg / Utland - Norden / 0% / Skattefritt salg utland
 
