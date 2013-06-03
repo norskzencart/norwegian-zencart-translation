@@ -1,0 +1,111 @@
+<!--
+/**
+ * @package documentation
+ * @copyright Copyright 2003-2006 Zen Cart Development Team
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: instruks.html 57 2011-03-26 09:47:46Z syntaxerror.no $
+ */
+//-->
+<html>
+<style type="text/css">
+<!--
+body, table{ font-family:Verdana, Arial, Helvetica, sans-serif; font-size:14px; }
+table.intro {border-color:C96E29; }
+td.intro{background-color:#EEEEEE ; border-color:5778ce; font-size:14px; }
+td.plainbox, div.callout {border: 1px dashed; border-color: C96E29; margin:5 40 5 40;}
+.heading {background-color:5778CE; font-weight:bold; font-size:14px;	width: 100%; }
+
+.title1 {color:C96E29; font-weight:bold; font-size:22px; }
+.title2 {color:C96E29; font-weight:bold; font-size:13px; }
+.small {font-size:10px ;}
+.error {color:FF0000; }
+.filename {font-family: mono, "Courier New", Courier ; font-size:14px; color: c96e29;}
+.pseudolink {text-decoration:underline; color:5778CE;}
+h1.intro { color: #ffffff; border:1px solid #aca893; background-color: #c96e29;  font-size: 22px;   padding: 4px;}
+h1 { color: #ffffff;    border:1px solid #aca893;   background-color: #5778ce;   font-size: 20px;   padding: 4px;}
+h2 { color: #c96e29; 	font-size: 18px;}
+h3 { color: #5778ce;	font-size: 16px; margin-bottom:0px;}
+h4 { color: #c96e29;	font-size: 14px;}
+
+
+-->
+</style>
+<title>Zen Cart(tm) - Instrukser for Norsk oversettelse</title><body>
+
+<table border="3" width="550px" align="center" cellpadding="6">
+<tr><td>
+<h1 align="center" class="intro">Instrukser / Veiledninger</h1>
+Jeg vil her forsøke å gi deg en kort starthjelp for din norske butikk, for mer informasjon se de <a href="../index.html" target="_blank">engelske dokumentene</a>.
+
+<h1>Installasjon av språkfiler</h1>
+<ul>
+<li>Pakk først ut zip-fila til en midlertidig mappe lokalt.</li><br />
+<li>Gi nytt navn til mappen <b>YOUR_ADMIN_FOLDER</b>, slik at den matcher det navn du bruker på admin-mappa i din Zen Cart-installasjon.</li><br />
+<li>Last opp alle filene til din nettjener (webserver), til rota av din Zen Cart-installasjon. Fil-/mappestruktur vil etter navneendring på admin-mappe være lik den som finnes i din Zen Cart-installasjon, slik at man kan laste mappene direkte opp og "overskrive" eksisterende.</li><br />
+<li>Gå så til <b>Admin -> Localization -> Languages</b></li><br />
+<li>Klikk på <b>New language</b>-knappen, og fyll inn nødvendig informasjon:
+	<ul><br />
+	<b>Name:</b> Norsk<br />
+	<b>Code:</b> no<br />
+	<b>Image:</b> icon.gif<br />
+	<b>Directory:</b> norwegian<br />
+	<b>Sort Order:</b> 0<br />
+	Kryss av for <b>Set as default</b><br />
+	</ul></li><br />
+<li>Klikk på <b>Insert</b>-knappen.</li><br />
+<li>Du kan nå velge Norsk fra nedtrekkslisten oppe til venstre under logo.</li><br />
+</ul>
+
+<h1>Fødselsdato</h1>
+<ul>
+<li>Gå til <b>Admin -> Configuration -> Minimum Values</b></li><br />
+<li>Klikk <b>Date of Birth</b> og endre verdien til <b>5</b>, og klikk så <b>Update</b>-knappen.</li><br />
+</ul>
+
+<h1>Norske kroner</h1>
+<ul>
+<li>Gå til <b>Admin -> Lokalisering -> Valuta</b> for å legge til Norske kroner (NOK)</li><br />
+<li>Klikk <b>Ny valuta</b>-knappen og fyll inn nødvendig informasjon:
+	<ul><br />
+	<b>Tittel:</b> Norske kroner<br />
+	<b>Kode:</b> NOK <em>(må skrives nøyaktig med store bokstaver)</em><br />
+	<b>Symbol venstre:</b> NOK <em>(anbefalt ved kortbetaling, ellers Kr.)</em><br />
+	<b>Symbol høyre:</b> ,- <em>(komma og bindestrek, eller tomt)</em><br />
+	<b>Desimalpunkt:</b> , <em>(komma)</em><br />
+	<b>Tusenpunkt:</b> . <em>(punktum)</em><br />
+	<b>Desimalplasser:</b> 0 <em>(eller 2)</em><br />
+	<b>Verdi:</b> 1 <em>(om dette er hovedvaluta)</em><br />
+	Kryss av for <b>Sett som standard</b> <em>(om dette er hovedvaluta)</em><br />
+	</ul></li><br />
+<li>Klikk på <b>Legg til</b>-knappen</li><br />
+<li>Klikk på <b>Oppdater valuta</b>-knappen for å oppdatere kursen på andre valutaer du bruker (slett de du ikke behøver).</li><br />
+</ul>
+
+<h1>Country Locale</h1>
+<ul>
+Om måneder vises på engelsk må du oppdatere koden
+<ul>
+<br />
+@setlocale(LC_TIME, '<b>riktig verdi fylles inn her</b>');<br /><br />
+</ul>
+i språkfilene:<br /><br />
+<ul>
+../includes/languages/norwegian.php<br /><br />
+../admin/includes/languages/norwegian.php<br /><br />
+</ul>
+Med riktig <b>country locale</b>-verdi som du burde kunne få ved å henvende deg til din webleverandør.
+</ul>
+
+<h1>Problemer?</h1>
+<ul>
+Om du støter på problemer kan du besøke forumet på <a href="http://www.zen-cart.no" target="_blank">Zen Cart Norge</a>, eller det offisielle på <a href="http://www.zen-cart.com" target="_blank">zen-cart.com</a>
+</ul>
+<br />
+<a href="endringslog-v1-3-5.html">Neste side.. >></a>
+
+</td>
+</tr>
+</table>
+<br /><br />
+</body>
+</html>
