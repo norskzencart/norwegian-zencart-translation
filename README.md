@@ -13,7 +13,7 @@ Dette er bare en liten del av alt som må gjøres i forhold til å drive netthan
 
 * Pakk ut zip-fila direkte til din Zen Cart-installasjon, eller til en midlertidig mappe lokalt - og last så opp alle filene til din nettjener (webserver). Fil-/mappestruktur i pakken skal være lik den som finnes i Zen Cart, med unntak av admin-mappe som må endres navn på tilsvarende din installasjon.
 * Gå så til 'Admin -> Localization -> Languages'
-* Klikk på 'New language'-knappen, og fyll inn nødvendig informasjon:
+* Klikk på 'New language'-knappen, og fyll inn nødvendig informasjon.
 
 ```
     Name: Norsk
@@ -23,7 +23,8 @@ Dette er bare en liten del av alt som må gjøres i forhold til å drive netthan
     Sort Order: 0
     Kryss av for 'Set as default'
 ```
-
+  Merk! Dersom man ønsker å bruke UTF-8 fyller man inn 'Code: nb' og 'Directory: norwegian_utf8'.
+  
 * Klikk på 'Insert'-knappen.
 * Du kan nå velge 'Norsk' fra nedtrekklisten oppe til venstre under logo.
 
@@ -66,7 +67,7 @@ i språkfilene:
 * ../includes/languages/norwegian.php
 * ../admin/includes/languages/norwegian.php
 
-#### Soner og moms
+### Soner og moms
 
 Det er mange som undrer på hvordan soner og moms skal settes opp i Zen Cart, og det er sikkert like mange som har feil i sitt oppsett. Vi vil her forsøke å klargjøre dette for norske forhold.
 
