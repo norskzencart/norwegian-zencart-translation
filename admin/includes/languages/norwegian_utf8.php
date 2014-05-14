@@ -743,8 +743,8 @@ define('ERROR_SHIPPING_ORIGIN_ZIP', '<strong>Advarsel:</strong>Butikkens postnum
 define('ERROR_ORDER_WEIGHT_ZERO_STATUS', '<strong>Advarsel:</strong> 0 vekt er konfigurert for gratis levering, og modul for gratis levering er ikke aktivert');
 define('ERROR_USPS_STATUS', '<strong>Advarsel:</strong> USPS mangler enten brukernavn og/eller passord, eller er satt til TEST og ikke PRODUCTION og vil ikke virke.');
 
-define('ERROR_SHIPPING_MODULES_NOT_DEFINED', 'MERK: Du har ingen leveringsmoduler aktivert. Gå til Moduler->Sending for å konfigurere dette.');
-define('ERROR_PAYMENT_MODULES_NOT_DEFINED', 'MERK: Du har ingen betalingsmoduler aktivert. Gå til Moduler->Betaling for å konfigurere dette.');
+define('ERROR_SHIPPING_MODULES_NOT_DEFINED', 'MERK: Du har ingen leveringsmoduler aktivert. Gå til \'Moduler -> Sending\' for å konfigurere dette.');
+define('ERROR_PAYMENT_MODULES_NOT_DEFINED', 'MERK: Du har ingen betalingsmoduler aktivert. Gå til \'Moduler -> Betaling\' for å konfigurere dette.');
 
 // text pricing
 define('TEXT_CHARGES_WORD','Beregnet pris:');
@@ -862,7 +862,7 @@ define('ENTRY_NOTHING_TO_SEND','Du har ikke fylt inn noe innhold for din melding
 // admin activity log warnings
   define('WARNING_ADMIN_ACTIVITY_LOG_DATE', 'Advarsel: Administrasjonens aktivitetlogg har over 2 måneder gamle oppføringer og bør tømmes.');
   define('WARNING_ADMIN_ACTIVITY_LOG_RECORDS', 'Advarsel: Administrasjonens aktivitetlogg har over 50.000 oppføringer og bør tømmes.');
-  define('RESET_ADMIN_ACTIVITY_LOG', 'Gå til \'Verktøy -> Butikkvedlikehold\' for å tømme administrasjonens aktivitetlogg.');
+  define('RESET_ADMIN_ACTIVITY_LOG', 'Du kan administrere aktivitetsloggen via \'Tilgangskontroll -> Aktivitetslogger\' dersom du har rettigheter til dette.');
 
   define('CATEGORY_HAS_SUBCATEGORIES', 'Merk: Kategori har underkategori<br />Produkt kan ikke legges til');
 
