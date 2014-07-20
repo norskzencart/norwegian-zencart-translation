@@ -112,7 +112,7 @@ Den norske oversettelsen administreres og vedlikeholdes på <a href="https://git
 
 ##### Informasjon om pakken
 
-Oversettelsen av butikkdelen (catalog) bygger på v1.2.7d av Eivind E. Valderhaug (DataWeb.no), oppdatert og forbedret til v1.3.0.x av Rune Rasmussen (syntaxerror.no). Administrasjonen er en fullstendig nyoversettelse utført av Rune Rasmussen (syntaxerror.no).
+Oversettelsen av butikkdelen (catalog) bygger på v1.2.7d av Eivind E. Valderhaug (DataWeb.no), oppdatert og forbedret til v1.3.0 og nyere av Rune Rasmussen (syntaxerror.no). Administrasjonen er en fullstendig nyoversettelse utført av Rune Rasmussen (syntaxerror.no).
 
 Pakken inneholder norske språkfiler for både administrasjon (admin) og butikk (catalog), samt knapper og flaggikon. Konfigurasjonsfelter i databasen er dog per i dag ikke mulig å oversette fullt ut, via språkfiler, det betyr at konfigurasjonen i admin fortsatt vil vises delvis på engelsk.
 
@@ -121,9 +121,9 @@ Pakken inneholder norske språkfiler for både administrasjon (admin) og butikk 
 Dersom du er fornøyd med oversettelsen, og tiden denne sparer for deg, vil du kanskje takke for jobben og bidra til at vi har mulighet for å holde pakken oppdatert regelmessig?
 Dette kan gjøres via <a href="http://oversettelser.syntaxerror.no/bidra.html" target="_blank">prosjektsidene våre</a>.
 
-Så langt, etter mer enn 8 år og over 20.000 nedlastinger, er det gitt ca <b>kr. 2530,-</b> - som takk for hjelpen for de mange hundre timer vi har brukt på å gi brukerne norsk Zen Cart.
+Så langt, etter mer enn 8 år og over 20.000 nedlastinger, er det mottatt ca. <b>2530 NOK</b>. Takk til de som har gitt sin støtte, det settes stor pris på både små og store bidrag.
 
-<a href="http://oversettelser.syntaxerror.no/bidra.html" target="_blank"><img src="cc.gif" border="0" alt="Støtt prosjektet" /><br /><br /><img src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" alt="Støtt prosjektet" /></a>
+<a href="http://oversettelser.syntaxerror.no/bidra.html" target="_blank"><img src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" alt="Støtt prosjektet" /></a>
 
 ##### Kontakt / Feilrapport
 
