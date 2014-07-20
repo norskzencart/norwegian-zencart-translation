@@ -11,5 +11,5 @@
 define('NAVBAR_TITLE_1', 'Registrering av konto');
 define('NAVBAR_TITLE_2', 'Vellykket');
 define('HEADING_TITLE', 'Din konto har blitt registrert!');
-define('TEXT_ACCOUNT_CREATED', 'Din nye konto har blitt registrert! Dersom du skulle ha spørsmål angående bruk av nettbutikken kan du <a href="' . zen_href_link(FILENAME_CONTACT_US) . '">kontakt oss</a>.<br /><br />En bekreftelse har blitt sendt til oppgitt e-postadresse, dersom du ikke mottar denne innen en time kan du <a href="' . zen_href_link(FILENAME_CONTACT_US) . '">kontakte oss</a>.');
+define('TEXT_ACCOUNT_CREATED', 'Din nye konto har blitt registrert! Dersom du skulle ha spørsmål angående bruk av nettbutikken kan du <a href="' . zen_href_link(FILENAME_CONTACT_US, '', 'SSL') . '">kontakt oss</a>.<br /><br />En bekreftelse har blitt sendt til oppgitt e-postadresse, dersom du ikke mottar denne innen en time kan du <a href="' . zen_href_link(FILENAME_CONTACT_US, '', 'SSL') . '">kontakte oss</a>.');
 define('PRIMARY_ADDRESS_TITLE', 'Din hovedadresse');

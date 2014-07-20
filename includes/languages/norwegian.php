@@ -1,25 +1,23 @@
 <?php
 /**
  * @package languageDefines
- * @copyright Copyright 2003-2007 Zen Cart Development Team
+ * @copyright Copyright 2003-2011 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: norwegian.php 107 2012-04-15 12:04:10Z syntaxerror.no $
  */
 
 // FOLLOWING WERE moved to meta_tags.php
-//  define('TITLE', 'Zen Cart');
-//  define('SITE_TAGLINE', 'Kunsten å drive e-handel');
-//  define('CUSTOM_KEYWORDS', 'e-handel, åpen kilde, butikk, netthandel');
+//define('TITLE', 'Zen Cart');
+//define('SITE_TAGLINE', 'Kunsten å drive e-handel');
+//define('CUSTOM_KEYWORDS', 'e-handel, åpen kilde, butikk, netthandel');
 // END: moved to meta_tags.php
 
   define('FOOTER_TEXT_BODY', 'Kopirett &copy; ' . date('Y') . '&nbsp;<a href="index.php?main_page=contact_us">' . STORE_OWNER . '</a><br />Drevet av netthandelsløsningen <a href="http://www.zen-cart.com" target="_blank">Zen Cart</a> med <a href="http://oversettelser.syntaxerror.no/zen-cart-dokumentasjon/index.php" target="_blank">norsk oversettelse</a>');
 
 // look in your $PATH_LOCALE/locale directory for available locales..
-// on RedHat try 'no_NO'
-// on FreeBSD try 'no_NO.ISO_8859-1'
-// on Windows try 'no', 'nor' or 'norwegian'
-setlocale(LC_TIME, 'no_NO.ISO8859-1', 'nb_NO.ISO-8859-1', 'no', 'nb', 'no-NO', 'nb-NO', 'no_NO', 'nb_NO', 'nor', 'norwegian', 'bokmal');
+$locales = array('no_NO.utf-8', 'nb_NO.utf-8', 'no_NO.UTF-8', 'nb_NO.UTF-8', 'nb_NO.utf8', 'no_NO.utf8', 'no', 'nb', 'nob-NO', 'no_NO', 'nb_NO', 'Norwegian_Bokmal', 'nor', 'norwegian', 'bokmal', 'bokmål');
+  @setlocale(LC_TIME, $locales);
 define('DATE_FORMAT_SHORT', '%d.%m.%Y');  // this is used for strftime()
 define('DATE_FORMAT_LONG', '%A %d. %B %Y'); // this is used for strftime()
 define('DATE_FORMAT', 'd/m/Y'); // this is used for date()
@@ -465,12 +463,9 @@ if (!function_exists('zen_date_raw')) {
 
   define('TEXT_REQUIRED', '<span class="errorText">Påkrevd</span>');
 
-  $warn_path = (isset($_SERVER['SCRIPT_FILENAME']) ? @dirname($_SERVER['SCRIPT_FILENAME']) : '.....');
   define('WARNING_INSTALL_DIRECTORY_EXISTS', 'Advarsel: Installasjonskatalogen er ikke slettet enda: ' . $warn_path . '/zc_install. Vennligst slett denne katalogen av sikkerhetsmessige hensyn.');
   define('WARNING_CONFIG_FILE_WRITEABLE', 'Advarsel: Konfigurasjonsfilen er <strong>ikke</strong> skrivebeskyttet: ' . $warn_path . '/includes/configure.php. Dette er en potensiell sikkerhetsrisiko - vennligst sett riktige tilgangsrettigheter på denne filen.');
-  unset($warn_path);
-  define('WARNING_SESSION_DIRECTORY_NON_EXISTENT', 'Advarsel: Sesjonskatalogen finnes ikke: ' . zen_session_save_path() . '. Nettsidene virker ikke som de skal inntil denne katalogen blir opprettet.');
-  define('WARNING_SESSION_DIRECTORY_NOT_WRITEABLE', 'Advarsel: Kan ikke skrive til sesjonskatalogen: ' . zen_session_save_path() . '. Nettsidene virker ikke som de skal inntil de riktige tilgangsrettigheter er satt.');
+  define('ERROR_FILE_NOT_REMOVEABLE', 'Advarsel: Kunne ikke fjerne angitt fil. Du må kanksje bruke FTP for å fjerne filen, som følge av serverrettigheter (konfigurasjonsbegrensninger).');
   define('WARNING_SESSION_AUTO_START', 'Advarsel: session.auto_start er aktivert - vennligst deaktiver denne php-funksjonen i php.ini og restart webserveren.');
   define('WARNING_DOWNLOAD_DIRECTORY_NON_EXISTENT', 'Advarsel: Katalogen for nedlastbare produkt finnes ikke: ' . DIR_FS_DOWNLOAD . '. Nedlastbare produkter virker ikke inntil denne katalogen blir opprettet.');
   define('WARNING_SQL_CACHE_DIRECTORY_NON_EXISTENT', 'Advarsel: Katalogen for SQL cache finnes ikke: ' . DIR_FS_SQL_CACHE . '. SQL-cache inntil denne katalogen blir opprettet.');
@@ -637,8 +632,10 @@ if (!function_exists('zen_date_raw')) {
   define('TEXT_FILESIZE_MEGS', ' MB');
 
 // shopping cart errors
-  define('ERROR_PRODUCT','Produktnavn: ');
+  define('ERROR_PRODUCT','Produktet: ');
   define('ERROR_PRODUCT_STATUS_SHOPPING_CART','<br />Vi beklager men dette produktet er blitt fjernet fra vår vareliste nå.<br />Dette produktet har derfor blitt fjernet fra din handlekurv.');
+  define('ERROR_PRODUCT_ATTRIBUTES','Produktet: ');
+  define('ERROR_PRODUCT_STATUS_SHOPPING_CART_ATTRIBUTES','<br />Vi beklager men dette produktet er blitt fjernet fra vår vareliste nå.<br />Dette produktet har derfor blitt fjernet fra din handlekurv.');
   define('ERROR_PRODUCT_QUANTITY_MIN',', ... Minimum mengde - ');
   define('ERROR_PRODUCT_QUANTITY_UNITS',' ... Antall enheter - ');
   define('ERROR_PRODUCT_OPTION_SELECTION',' ... Ugyldig verdi for utvalg ');
@@ -649,6 +646,7 @@ if (!function_exists('zen_date_raw')) {
   define('ERROR_PRODUCT_QUANTITY_MAX_SHOPPING_CART',' ... Maksimalt antall - ');
 
   define('WARNING_SHOPPING_CART_COMBINED', 'MERK: Innholdet i din gjeldende handlekurv er slått sammen med innholdet i handlekurven fra ditt forrige besøk. Pass på å sjekke innholdet før du fullfører ordren.');
+  define('WARNING_PRODUCT_QUANTITY_ADJUSTED', 'Antall har blitt endret i forhold til hva som finnes på lager. ');
 
 // error on checkout when $_SESSION['customers_id' does not exist in customers table
   define('ERROR_CUSTOMERS_ID_INVALID', 'Kundeinformasjon kan ikke valideres!<br />Vennligst logg inn eller gjennopprett din konto...');
@@ -779,12 +777,15 @@ if (SHOW_NEW_PRODUCTS_LIMIT == 0) {
   define('TABLE_HEADING_LOGIN_DETAILS', 'Kontoopplysninger');
   define('TABLE_HEADING_REFERRAL_DETAILS', 'Ble du tipset om oss?');
 
+  define('ERROR_TEXT_COUNTRY_DISABLED_PLEASE_CHANGE', 'Beklager, vi tilbyr ikke lengre fakturering eller levering til "%s".  Du må oppdatere/endre adresse for å kunne fortsette.');
+
   define('ENTRY_EMAIL_PREFERENCE','E-postformat');
   define('ENTRY_EMAIL_HTML_DISPLAY','HTML');
   define('ENTRY_EMAIL_TEXT_DISPLAY','Kun ren tekst');
   define('EMAIL_SEND_FAILED','Feil: Kunne ikke sende e-post til: "%s" <%s> med emne: "%s"');
 
   define('DB_ERROR_NOT_CONNECTED', 'Feil - Kunne ikke koble til database');
+  define('ERROR_DATABASE_MAINTENANCE_NEEDED', '<a href="http://www.zen-cart.com/content.php?334-ERROR-0071-There-appears-to-be-a-problem-with-the-database-Maintenance-is-required" target="_blank">ERROR 0071: Det virker å være problmer med databasen, vedlikehold må utføres.</a>');
 
 // EZ-PAGES Alerts
   define('TEXT_EZPAGES_STATUS_HEADER_ADMIN', 'Advarsel: EZ-PAGES HEADER - On for Admin IP Only');

@@ -15,4 +15,3 @@ define('BOX_HEADING_EZPAGES','Ekstrasider og lenker');
 define('TEXT_EZ_PAGES_TABLE_CONTEXT', 'Innholdsfortegnelse');
 define('CURRENT_PAGE_INDICATOR', '&nbsp;*&nbsp;');
 define('NOT_CURRENT_PAGE_INDICATOR', '&nbsp;-&nbsp;');
-

@@ -23,4 +23,3 @@ define('BOX_HEADING_MUSIC_GENRES', 'Musikksjangere');
 define('BOX_HEADING_RECORD_COMPANY', 'Plateselskaper');
 define('PULL_DOWN_RECORD_COMPANIES', '- Tilbakestill -');
 define('PULL_DOWN_MUSIC_GENRES', '- Tilbakestill -');
-

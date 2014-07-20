@@ -1,7 +1,7 @@
 <?php
 /**
  * @package languageDefines
- * @copyright Copyright 2003-2007 Zen Cart Development Team
+ * @copyright Copyright 2003-2013 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: email_extras.php 93 2012-02-16 23:01:05Z syntaxerror.no $
@@ -46,6 +46,3 @@
 // Low Stock Emails
   define('EMAIL_TEXT_SUBJECT_LOWSTOCK','Advarsel: Lav lagerbeholdning');
   define('SEND_EXTRA_LOW_STOCK_EMAIL_TITLE','Rapport - Lav lagerbeholdning: ');
-
-// for when gethost is off
-  define('OFFICE_IP_TO_HOST_ADDRESS', 'Deaktivert');

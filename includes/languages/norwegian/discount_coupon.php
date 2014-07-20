@@ -1,8 +1,8 @@
 <?php
 /**
  * @package languageDefines
- * @copyright Copyright 2003-2009 Zen Cart Development Team
- * @copyright Copyright Translation 2006-2010 Rune Rasmussen http://www.syntaxerror.no/
+ * @copyright Copyright 2003-2013 Zen Cart Development Team
+ * @copyright Copyright Translation 2006-2014 Rune Rasmussen http://www.syntaxerror.no/
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * $Id: discount_coupon.php 93 2012-02-16 23:01:05Z syntaxerror.no $
@@ -28,6 +28,8 @@ define('TEXT_COUPON_HELP_CATEGORIES', '<p class="bold">Kategorirestriksjoner:</p
 define('TEXT_COUPON_HELP_PRODUCTS', '<p class="bold">Produktrestriksjoner:</p>');
 define('TEXT_ALLOW', 'Allow');
 define('TEXT_DENY', 'Deny');
+
+define('TEXT_NO_CAT_TOP_ONLY_DENY', '<p>Denne koden har spesifike produktrestriksjoner.');
 define('TEXT_NO_CAT_RESTRICTIONS', '<p>Denne koden er gyldig for alle kategorier.</p>');
 define('TEXT_NO_PROD_RESTRICTIONS', '<p>Denne koden er gyldig for alle produkter.</p>');
 define('TEXT_CAT_ALLOWED', ' (Gyldig for denne kategorien)');

@@ -1,8 +1,8 @@
 <?php
 /**
  * @package languageDefines
- * @copyright Copyright 2003-2009 Zen Cart Development Team
- * @copyright Copyright Translation 2006-2010 Rune Rasmussen - syntaxerror.no
+ * @copyright Copyright 2003-2013 Zen Cart Development Team
+ * @copyright Copyright Translation 2006-2014 Rune Rasmussen - syntaxerror.no
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: popup_coupon_help.php 107 2012-04-15 12:04:10Z syntaxerror.no $
@@ -26,9 +26,11 @@ define('TEXT_DENY', 'Ikke godta');
 define('TEXT_ALLOWED', ' (Tillatt)');
 define('TEXT_DENIED', ' (Ikke tillatt)');
 
+define('TEXT_NO_CAT_TOP_ONLY_DENY', '<p>Denne koden har spesifike produktrestriksjoner.');
 define('TEXT_NO_CAT_RESTRICTIONS', '<p>Denne koden er gyldig for alle kategorier.</p>');
 define('TEXT_NO_PROD_RESTRICTIONS', '<p>Denne koden er gyldig for alle produkter.</p>');
 // gift certificates cannot be purchased with Discount Coupons
 define('TEXT_COUPON_GV_RESTRICTION','En rabattkode kan ikke benyttes ved kjøp av ' . TEXT_GV_NAMES . '.');
 
 define('TEXT_COUPON_GV_RESTRICTION_ZONES', 'Restriksjoner for fakturaadresse finnes.');
+

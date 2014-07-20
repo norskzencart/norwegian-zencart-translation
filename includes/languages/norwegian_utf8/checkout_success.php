@@ -15,7 +15,7 @@ define('HEADING_TITLE', 'Takk for at du valgte å handle hos oss. Vi setter stor
 define('TEXT_SUCCESS', '');
 define('TEXT_NOTIFY_PRODUCTS', 'Varsle meg om oppdateringer på disse produktene');
 define('TEXT_SEE_ORDERS', 'Du kan se din ordrehistorikk ved å gå til <a href="' . zen_href_link(FILENAME_ACCOUNT, '', 'SSL') . '" name="linkMyAccount">Min konto</a> og trykke på vis alle ordrer.');
-define('TEXT_CONTACT_STORE_OWNER', 'Dersom du har spørsmål, kan du henvende deg til <a href="' . zen_href_link(FILENAME_CONTACT_US) . '" name="linkContactUs">kundeservice</a>.');
+define('TEXT_CONTACT_STORE_OWNER', 'Dersom du har spørsmål, kan du henvende deg til <a href="' . zen_href_link(FILENAME_CONTACT_US, '', 'SSL') . '" name="linkContactUs">kundeservice</a>.');
 define('TEXT_THANKS_FOR_SHOPPING', 'Takk for at du handlet hos oss!');
 
 define('TABLE_HEADING_COMMENTS', '');
