@@ -12,6 +12,7 @@ define('HEADING_TITLE', 'Land');
 
 define('TABLE_HEADING_COUNTRY_NAME', 'Land');
 define('TABLE_HEADING_COUNTRY_CODES', 'ISO-koder');
+define('TABLE_HEADING_COUNTRY_STATUS', 'Status');
 define('TABLE_HEADING_ACTION', 'Valg');
 
 define('TEXT_INFO_EDIT_INTRO', 'Gjør nødvendige endringer');
@@ -19,6 +20,7 @@ define('TEXT_INFO_COUNTRY_NAME', 'Navn:');
 define('TEXT_INFO_COUNTRY_CODE_2', 'ISO-kode (2):');
 define('TEXT_INFO_COUNTRY_CODE_3', 'ISO-kode (3):');
 define('TEXT_INFO_ADDRESS_FORMAT', 'Adresseformat:');
+define('TEXT_INFO_COUNTRY_STATUS', 'Status (Aktiv for levering?):');
 define('TEXT_INFO_INSERT_INTRO', 'Fyll inn nytt land med relatert informasjon');
 define('TEXT_INFO_DELETE_INTRO', 'Er du sikker på at du ønsker å slette dette landet?');
 define('TEXT_INFO_HEADING_NEW_COUNTRY', 'Nytt land');

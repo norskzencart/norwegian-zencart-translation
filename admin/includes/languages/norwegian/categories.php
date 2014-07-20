@@ -137,11 +137,6 @@ define('ERROR_CANNOT_ADD_PRODUCT_TYPE','Produkttypen kan ikke bli lagt til denne
   define('TEXT_CATEGORIES_IMAGE_DIR','Last opp til mappe:');
   define('TEXT_CATEGORIES_IMAGE_MANUAL', '<strong>Eller, velg et eksisterende bilde fra tjener. Filenavn:</strong>');
 
-  define('TEXT_VIRTUAL_PREVIEW','Advarsel: Dette produktet er merket - gratis levering og ingen leveringsadresse');
-  define('TEXT_VIRTUAL_EDIT','Advarsel: Dette produktet er merket - gratis levering og ingen leveringsadresse');
-  define('TEXT_FREE_SHIPPING_PREVIEW','Advarsel: Dette produktet er merket - gratis levering, leveringsadresse påkrevd');
-  define('TEXT_FREE_SHIPPING_EDIT','Advarsel: Ja, gjør produktet - gratis levering, leveringsadresse påkrevd');
-
   define('TEXT_PRODUCTS_QTY_BOX_STATUS_PREVIEW','Advarsel: Viser ikke felt for antall, standard satt til 1 stk.');
   define('TEXT_PRODUCTS_QTY_BOX_STATUS_EDIT','Advarsel: Viser ikke felt for antall, standard satt til 1 stk.');
 
@@ -163,7 +158,6 @@ define('ERROR_CANNOT_ADD_PRODUCT_TYPE','Produkttypen kan ikke bli lagt til denne
 
   define('TEXT_PRODUCTS_MIXED','Produktantall Min./Enhetsmiks:');
 
-  define('PRODUCTS_PRICE_IS_FREE_TEXT', 'Product er gratis');
   define('TEXT_PRODUCT_IS_FREE','Produkt er gratis:');
   define('TEXT_PRODUCTS_IS_FREE_PREVIEW','*Produkt er merket som gratis');
   define('TEXT_PRODUCTS_IS_FREE_EDIT','*Produkt er merket som gratis');
@@ -200,14 +194,13 @@ define('TEXT_PRODUCTS_STATUS_ON_OF',' av ');
 define('TEXT_PRODUCTS_STATUS_ACTIVE',' aktiv ');
 
 define('TEXT_CATEGORIES_DESCRIPTION', 'Kategoribeskrivelse:');
-define('PRODUCTS_PRICE_IS_CALL_FOR_PRICE_TEXT', 'Produkt er ring for pris');
 
 // Metatags
-  define('TEXT_INFO_HEADING_EDIT_CATEGORY_META_TAGS', 'Metatagg definisjoner for kategorier');
-  define('TEXT_EDIT_CATEGORIES_META_TAGS_INTRO', 'Definer egene metatagger');
-  define('TEXT_EDIT_CATEGORIES_META_TAGS_TITLE', 'Tittel:');
-  define('TEXT_EDIT_CATEGORIES_META_TAGS_KEYWORDS', 'Nøkkelord:');
-  define('TEXT_EDIT_CATEGORIES_META_TAGS_DESCRIPTION', 'Beskrivelse:');
+define('TEXT_INFO_HEADING_EDIT_CATEGORY_META_TAGS', 'Metatagg definisjoner for kategorier');
+define('TEXT_EDIT_CATEGORIES_META_TAGS_INTRO', 'Definer egene metatagger');
+define('TEXT_EDIT_CATEGORIES_META_TAGS_TITLE', 'Tittel:');
+define('TEXT_EDIT_CATEGORIES_META_TAGS_KEYWORDS', 'Nøkkelord:');
+define('TEXT_EDIT_CATEGORIES_META_TAGS_DESCRIPTION', 'Beskrivelse:');
 
 define('WARNING_PRODUCTS_IN_TOP_INFO', 'Advarsel: Du har produkter i toppnivåkategorien. Dette vil føre til at prising ikke virker riktig i butikken. Produkter som ble funnet: ');
 

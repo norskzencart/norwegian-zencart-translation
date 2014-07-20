@@ -3,7 +3,7 @@
  * @package admin
  * @copyright Copyright 2003-2009 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
- * @copyright Copyright Translation 2006 - 2010 Rune Rasmussen - syntaxerror.no
+ * @copyright Copyright Translation 2006 - 2013 Rune Rasmussen - syntaxerror.no
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: developers_tool_kit.php 93 2012-02-16 23:01:05Z syntaxerror.no $
  */
@@ -80,4 +80,22 @@
   define('TEXT_ALL_FILES_LOOKUP_JS', 'Bare .js');
 
   define('TEXT_CASE_SENSITIVE', 'Skill mellom små og store bokstaver?');
+
+  //Search Configuration Keys
+  define('SEARCH_CFG_KEYS_HEADING_TITLE','<strong>Søk i konfigurasjonsinnstillinger/-nøkler</strong>');
+  define('SEARCH_CFG_KEYS_SEARCH_BOX_TEXT', '<strong>Uttrykk å søke etter:</strong> (Dette vil søke i konfigurasjonsinnstillingers navn og beskrivelse, og også konfigurasjonsnøkler ved nøyaktig match.)');
+  define('SEARCH_CFG_KEYS_TABLE_SECTION', 'Seksjon');
+  define('SEARCH_CFG_KEYS_TABLE_GROUP','Gruppe');
+  define('SEARCH_CFG_KEYS_TABLE_TITLE', 'Tittel');
+  define('SEARCH_CFG_KEYS_TABLE_DESCRIPTION','Beskrivelse');
+  define('SEARCH_CFG_KEYS_TABLE_VALUE','Verdi');
+  define('SEARCH_CFG_KEYS_TABLE_KEY_NAME', 'Nøkkelnavn');
+  define('SEARCH_CFG_KEYS_TABLE_EDIT','Endre');
+  define('SEARCH_CFG_KEYS_NOT_FOUND_KEYS', 'Ingen konfigurasjonsnøkkel/-nøkler ble funnet.');
+  define('SEARCH_CFG_KEYS_FOUND_KEYS', 'konfigurasjonsnøkkel/-nøkler ble funnet.');
+  define('SEARCH_CFG_KEYS_FORM_PLACEHOLDER', 'Angi ord som det skal søkes ettter i innstillinger.');
+  define('SEARCH_CFG_KEYS_FORM_BUTTON_SEARCH_SORTED_BY_GROUP', 'Søk');
+  define('SEARCH_CFG_KEYS_FORM_BUTTON_SEARCH_SORTED_BY_KEY', 'Søk (sortert etter nøkkel)');
+  define('SEARCH_CFG_KEYS_FORM_BUTTON_VIEW_ALL', 'Vis alle');
+  define('SEARCH_CFG_KEYS_FORM_BUTTON_RESET', 'Tilbakestill');
 

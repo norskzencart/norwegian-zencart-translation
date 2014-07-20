@@ -19,14 +19,15 @@ define('HEADER_LOGO_HEIGHT', '70px');
 define('HEADER_LOGO_IMAGE', 'logo.gif');
 
 // look in your $PATH_LOCALE/locale directory for available locales..
-setlocale(LC_TIME, 'no_NO.ISO8859-1', 'nb_NO.ISO-8859-1', 'no', 'nb', 'no-NO', 'nb-NO', 'no_NO', 'nb_NO', 'nor', 'norwegian', 'bokmal');
+$locales = array('no_NO.utf-8', 'nb_NO.utf-8', 'no_NO.UTF-8', 'nb_NO.UTF-8', 'nb_NO.utf8', 'no_NO.utf8', 'no', 'nb', 'nob-NO', 'no_NO', 'nb_NO', 'Norwegian_Bokmal', 'nor', 'norwegian', 'bokmal', 'bokmål');
+@setlocale(LC_TIME, $locales);
 define('DATE_FORMAT_SHORT', '%d.%m.%Y');  // this is used for strftime()
 define('DATE_FORMAT_LONG', '%A %d. %B %Y'); // this is used for strftime()
 define('DATE_FORMAT', 'd.m.Y'); // this is used for date()
 define('PHP_DATE_TIME_FORMAT', 'd.m.Y H:i:s'); // this is used for date()
 define('DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' %H:%M:%S');
 define('DATE_FORMAT_SPIFFYCAL', 'dd.MM.yyyy');  //Use only 'dd', 'MM' and 'yyyy' here in any order
-
+define('ADMIN_NAV_DATE_TIME_FORMAT', '%A %d %b %Y %X'); // this is used for strftime()
 /**
  *
  * This function will return a date in form of YYYYMMDD
@@ -243,8 +244,7 @@ define('HEADER_TITLE_LOGOFF', 'Logg av');
 define('MALE', 'Mann');
 define('FEMALE', 'Kvinne');
 
-// text for date of birth example
-define('DOB_FORMAT_STRING', 'dd.mm.åååå');
+define('NONE', 'Ingen');
 
 // configuration box text
 define('BOX_HEADING_CONFIGURATION', 'Konfigurasjon');
@@ -736,6 +736,7 @@ define('TEXT_LEGEND_STATUS_ON', 'På ');
 define('TEXT_INFO_MASTER_CATEGORIES_ID', '<strong>Merk: Hovedkategori er brukt for prisingsformål der hvor<br />produktkategori påvirker prising på lenkede produkter. F.eks: Tilbud</strong>');
 define('TEXT_YES', 'Ja');
 define('TEXT_NO', 'Nei');
+define('TEXT_CANCEL', 'Avbryt');
 
 // shipping error messages
 define('ERROR_SHIPPING_CONFIGURATION', '<strong>Leveringskonfigurasjon feil!</strong>');
@@ -879,6 +880,9 @@ define('TEXT_EMAIL', 'E-post');
 define('TEXT_NOEMAIL', 'Ingen e-post');
 
 define('BOX_HEADING_PRODUCT_TYPES', 'Produkttyper');
+
+define('ERROR_DATABASE_MAINTENANCE_NEEDED', '<a href="http://www.zen-cart.com/content.php?334-ERROR-0071-There-appears-to-be-a-problem-with-the-database-Maintenance-is-required" target="_blank">ERROR 0071: Det virker å være problmer med databasen, vedlikehold må utføres.</a>');
+
 
 ///////////////////////////////////////////////////////////
 // include additional files:

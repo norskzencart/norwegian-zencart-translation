@@ -1,27 +1,12 @@
 <?php
-//
-// +----------------------------------------------------------------------+
-// |zen-cart Open Source E-commerce                                       |
-// +----------------------------------------------------------------------+
-// | Copyright (c) 2003 The zen-cart developers                           |
-// |                                                                      |
-// | http://www.zen-cart.com/index.php                                    |
-// |                                                                      |
-// | Portions Copyright (c) 2003 osCommerce                               |
-// |                                                                      |
-// | Norwegian translation Copyrigt (c) 2006 Rune Rasmussen               |
-// | http://www.syntaxerror.no                                            |
-// +----------------------------------------------------------------------+
-// | This source file is subject to version 2.0 of the GPL license,       |
-// | that is bundled with this package in the file LICENSE, and is        |
-// | available through the world-wide-web at the following url:           |
-// | http://www.zen-cart.com/license/2_0.txt.                             |
-// | If you did not receive a copy of the zen-cart license and are unable |
-// | to obtain it through the world-wide-web, please send a note to       |
-// | license@zen-cart.com so we can mail you a copy immediately.          |
-// +----------------------------------------------------------------------+
-//  $Id: index.php 94 2012-02-16 23:24:23Z syntaxerror.no $
-//
+/**
+ * @package admin
+ * @copyright Copyright 2003-2013 Zen Cart Development Team
+ * @copyright Portions Copyright 2003 osCommerce
+ * @copyright Copyright Translation 2006 - 2013 Rune Rasmussen - syntaxerror.no
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version GIT: $Id: Author: Ian Wilson  Sat Aug 10 18:43:55 2013 +0100 Modified in v1.5.2 $
+ */
 
 define('HEADING_TITLE', 'Velg en handling ...');
 
@@ -73,3 +58,33 @@ define('BOX_ENTRY_SALEMAKER_ACTIVE','Salg som er aktiv');
 define('LAST_10_DAYS', 'Tellerhistorie siste %s dager');
 define('SESSION', 'Økt');
 define('TOTAL', 'Totalt');
+
+// DASHBOARD - HOME PAGE OF ADMIN - CUSTOMERS section
+define('BOX_TITLE_CUSTOMERS', 'Kunder');
+define('BOX_ENTRY_CUSTOMERS_NORMAL', '- Komplette kontoer:');
+define('BOX_ENTRY_CUSTOMERS_TOTAL', 'Kundekontoer totalt:');
+define('BOX_ENTRY_CUSTOMERS_TOTAL_DISTINCT', 'Distinkte kundekontoer totalt:');
+
+define('TEXT_REMOVE', 'Fjern');
+define('TEXT_UPDATE', 'Oppdater');
+define('TEXT_CONFIRM_REMOVE', 'Er du sikker på at du ønsker å fjerne dette elementet fra kontrollpanelet?');
+define('TEXT_WIDGET_UPDATE_HEADER', 'Elementinnstillinger ble oppdatert.');
+
+define ('TEXT_TIMER_SELECT_NONE', 'Ingen oppdatering');
+define ('TEXT_TIMER_SELECT_1MIN', 'Oppdater hvert minutt');
+define ('TEXT_TIMER_SELECT_5MIN', 'Oppdater hvert 5. minutt');
+define ('TEXT_TIMER_SELECT_10MIN', 'Oppdater hvert 10. minutt');
+define ('TEXT_TIMER_SELECT_15MIN', 'Oppdater hvert 15. minutt');
+
+define ('TEXT_NO_WIDGETS_TO_INSTALL', 'Det er for øyeblikket ingen tilgjengelige elementer å installere.');
+define('TEXT_FORM_ERROR_CHOOSE_ZONE', 'Velg et område');
+define('TEXT_WARNING_SUPERUSER_REQUIRED', 'Bare en superbruker kan fullføre grunnoppsettet. Du vil ikke kunne bruke administrasjonen før dette er gjort.');
+define('TEXT_HEADING_SETUP_WIZARD', 'Grunnoppsett');
+
+define('TEXT_FORM_LEGEND_REQUIRED_SETUP', 'Påkrevd informasjon for opppsett');
+define('TEXT_FORM_LABEL_STORE_NAME', 'Butikknavn');
+define('TEXT_FORM_LABEL_STORE_OWNER', 'Butikkeier');
+define('TEXT_FORM_LABEL_STORE_OWNER_EMAIL', 'Butikkens e-post');
+define('TEXT_FORM_LABEL_STORE_COUNTRY', 'Butikkland');
+define('TEXT_FORM_LABEL_STORE_ZONE', 'Butikksone');
+define('TEXT_FORM_LABEL_STORE_ADDRESS', 'Butikkadresse');

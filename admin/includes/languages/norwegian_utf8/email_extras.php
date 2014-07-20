@@ -23,7 +23,7 @@
   define('OFFICE_DATE_TIME','Dato og tid:');
 
 // email disclaimer
-  define('EMAIL_DISCLAIMER', 'Denne e-posten er sendt i henhold til gjeldende regler for e-postreklame, den ble sendt til deg fordi noen har benyttet seg av en tjeneste hos oss og oppgitt denne e-postadressen. Dersom du mener at du ikke skulle ha mottatt denne e-posten, vennligst gi beskjed til oss på %s');
+  define('EMAIL_DISCLAIMER', "\n" . 'Denne e-posten er sendt i henhold til gjeldende regler for e-postreklame, den ble sendt til deg fordi noen har benyttet seg av en tjeneste hos oss og oppgitt denne e-postadressen. Dersom du mener at du ikke skulle ha mottatt denne e-posten, vennligst gi beskjed til oss på %s');
   define('EMAIL_SPAM_DISCLAIMER','');
   define('EMAIL_FOOTER_COPYRIGHT','Kopirett ' . STORE_OWNER . '.');
   define('SEND_EXTRA_GV_ADMIN_EMAILS_TO_SUBJECT','[Gavekort - admin sendt]');

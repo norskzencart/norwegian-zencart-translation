@@ -5,7 +5,7 @@
  * @copyright Copyright Translation 2006-2012 Rune Rasmussen - http://www.syntaxerror.no
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
- * @version $Id: login.php 106 2012-04-15 11:15:39Z syntaxerror.no $
+ * @version $Id: login.php 130 2012-10-12 15:24:49Z syntaxerror.no $
  */
 
 define('HEADING_TITLE', 'Innlogging');
