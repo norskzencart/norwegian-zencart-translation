@@ -9,11 +9,10 @@
  */
 
   define('MODULE_PAYMENT_PAYPAL_TEXT_ADMIN_TITLE', 'PayPal Payments Standard');
-    define('MODULE_PAYMENT_PAYPAL_TEXT_ADMIN_TITLE_NONUSA', 'PayPal Website Payments Standard');
+  define('MODULE_PAYMENT_PAYPAL_TEXT_ADMIN_TITLE_NONUSA', 'PayPal Website Payments Standard');
   define('MODULE_PAYMENT_PAYPAL_TEXT_CATALOG_TITLE', 'PayPal');
   if (IS_ADMIN_FLAG === true) {
   define('MODULE_PAYMENT_PAYPAL_TEXT_DESCRIPTION', '<strong>PayPal Payments Standard</strong> (Eldre PayPal-tjeneste, mindre pålitelig enn \'Express Checkout\')<br /><a href="https://www.zen-cart.com" target="_blank">Administrer din PayPal-konto.</a><br /><br /><font color="green">Konfigurasjonsveiledning:</font><br />1. <a href="http://www.zen-cart.com/partners/paypal-std" target="_blank">Logg inn på din PayPal-konto - klikk her.</a><br />2. I din PayPal-konto under "Profile",<ul><li>angi din <strong>Instant Payment Notification Preferences</strong> URL til:<br />'.str_replace('index.php?main_page=index','ipn_main_handler.php',zen_catalog_href_link(FILENAME_DEFAULT, '', 'SSL')) . '<br />(Om annen adresse allerede er brukt kan du la den være.)<br /><span class="alert">Forsikre deg om at avkryssingsboksen for å aktivere IPN er markert!</span></li><li>in <strong>Website Payments Preferences</strong> angi din <strong>Automatic Return URL</strong> til:<br />'.zen_catalog_href_link(FILENAME_CHECKOUT_PROCESS, '', 'SSL',false).'</li>' . (defined('MODULE_PAYMENT_PAYPAL_STATUS') ? '' : '<li>... og klikk "installer" over for å aktivere PayPal-støtte... og "rediger" for å fortelle Zen Cart om dine PayPal-innstillinger.</li>') . '</ul><font color="green"><hr /><strong>Påkrevd:</strong></font><br /><hr />*<strong>PayPal-konto</strong> (<a href="http://www.zen-cart.com/partners/paypal-std" target="_blank">klikk for å opprette/konfigurere</a>)<br />*<strong>CURL med SSL</strong> er sterkt anbefalt<br />*<strong>Port 80 (og port 443 dersom SSL er aktivert)</strong> er brukt for <strong>toveis</strong> kommunikasjon med systemporten, må derfor være åpen i din leverandørs ruter/brannmur<br />*<strong>PHP allow_url_fopen()</strong> må være aktivert<br />*<strong>Innstillinger</strong> i din PayPal-konto må være satt som angitt ovenfor.' );
-
  } else {
     define('MODULE_PAYMENT_PAYPAL_TEXT_DESCRIPTION', '<strong>PayPal</strong>');
   }
