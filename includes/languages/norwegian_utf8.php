@@ -236,10 +236,10 @@ if (!function_exists('zen_date_raw')) {
   define('BOX_HEADING_MANUFACTURERS', 'Produsenter');
 
 // whats_new box text in sideboxes/whats_new.php
-  define('BOX_HEADING_WHATS_NEW', 'Nye produkter');
-  define('CATEGORIES_BOX_HEADING_WHATS_NEW', 'Nye produkter ...');
+  define('BOX_HEADING_WHATS_NEW', 'Nyeste produkter');
+  define('CATEGORIES_BOX_HEADING_WHATS_NEW', 'Nyeste produkter ...');
 
-  define('BOX_HEADING_FEATURED_PRODUCTS', 'Utvalgt');
+  define('BOX_HEADING_FEATURED_PRODUCTS', 'Utvalgte produkter');
   define('CATEGORIES_BOX_HEADING_FEATURED_PRODUCTS', 'Utvalgte produkter ...');
   define('TEXT_NO_FEATURED_PRODUCTS', 'Flere utvalgte produkter blir lagt til etter hvert. Velkommen tilbake senere.');
 
@@ -321,18 +321,18 @@ if (!function_exists('zen_date_raw')) {
   define('NEW_ADDRESS_TITLE', 'Fakturaadresse');
 
 // javascript messages
-  define('JS_ERROR', 'Skjemaet ble ikke akseptert.\n\nVennligst gjør følgende endringer:\n\n');
+  define('JS_ERROR', 'Skjemaet ble ikke akseptert.\n\nDu må gjøre følgende endringer:\n\n');
 
   define('JS_REVIEW_TEXT', '* Omtaleteksten må inneholde minst ' . REVIEW_TEXT_MIN_LENGTH . ' tegn.');
   define('JS_REVIEW_RATING', '* Du må gi produktet en karakter for å kunne legge inn omtale.');
 
-  define('JS_ERROR_NO_PAYMENT_MODULE_SELECTED', '* Vennligst velg en betalingsmåte for din ordre.');
+  define('JS_ERROR_NO_PAYMENT_MODULE_SELECTED', '* Du må velge en betalingsmåte for din ordre.');
 
-  define('JS_ERROR_SUBMITTED', 'Dette skjemaet har allerede blitt sendt. Vennligst trykk \'ok\' og vent på at prosessen blir ferdig.');
+  define('JS_ERROR_SUBMITTED', 'Dette skjemaet har allerede blitt sendt. Klikk på \'OK\' og vent på at prosessen blir ferdig.');
 
-  define('ERROR_NO_PAYMENT_MODULE_SELECTED', 'Vennligst velg en betalingsmåte for din ordre.');
-  define('ERROR_CONDITIONS_NOT_ACCEPTED', 'Vennligst godta våre betingelser for denne ordre ved å markere boksen.');
-  define('ERROR_PRIVACY_STATEMENT_NOT_ACCEPTED', 'Vennligst godta våre personvernerklæringer ved å markere boksen.');
+  define('ERROR_NO_PAYMENT_MODULE_SELECTED', 'Du må velge en betalingsmåte for din ordre.');
+  define('ERROR_CONDITIONS_NOT_ACCEPTED', 'Du må bekrefte at du har lest og akseptert våre betingelser ved å krysse av for dette i feltet nedenfor.');
+  define('ERROR_PRIVACY_STATEMENT_NOT_ACCEPTED', 'Du må bekrefte at du har lest og akseptert våre personvernerklæring ved å markere krysse av for dette i feltet nedenfor.');
 
   define('CATEGORY_COMPANY', 'Firma');
   define('CATEGORY_PERSONAL', 'Dine personlige detaljer');
@@ -341,15 +341,15 @@ if (!function_exists('zen_date_raw')) {
   define('CATEGORY_OPTIONS', 'Valg');
   define('CATEGORY_PASSWORD', 'Ditt passord');
   define('CATEGORY_LOGIN', 'Logg inn');
-  define('PULL_DOWN_DEFAULT', 'Vennligst velg ditt land');
-  define('PLEASE_SELECT', 'Vennligst velg ...');
+  define('PULL_DOWN_DEFAULT', 'Du må velge ditt land');
+  define('PLEASE_SELECT', 'Du må velge ...');
   define('TYPE_BELOW', 'Gjør et valg nedenfor ...');
 
   define('ENTRY_COMPANY', 'Firmanavn:');
-  define('ENTRY_COMPANY_ERROR', 'Vennligst fyll inn et firmanavn.');
+  define('ENTRY_COMPANY_ERROR', 'Du må fylle inn et firmanavn.');
   define('ENTRY_COMPANY_TEXT', '<span style="color:green;">(Fylles kun ut om firma)</span>');
   define('ENTRY_GENDER', 'Tittel:');
-  define('ENTRY_GENDER_ERROR', 'Vennligst velg en tittel.');
+  define('ENTRY_GENDER_ERROR', 'Du må velge en tittel.');
   define('ENTRY_GENDER_TEXT', '*');
   define('ENTRY_FIRST_NAME', 'Fornavn:');
   define('ENTRY_FIRST_NAME_ERROR', 'Fornavnet ditt må inneholde minst ' . ENTRY_FIRST_NAME_MIN_LENGTH . ' tegn.');
@@ -362,8 +362,8 @@ if (!function_exists('zen_date_raw')) {
   define('ENTRY_DATE_OF_BIRTH_TEXT', '* (f.eks. 27.02.1982)');
   define('ENTRY_EMAIL_ADDRESS', 'E-post:');
   define('ENTRY_EMAIL_ADDRESS_ERROR', 'E-postadressen din må inneholde minst ' . ENTRY_EMAIL_ADDRESS_MIN_LENGTH . ' tegn.');
-  define('ENTRY_EMAIL_ADDRESS_CHECK_ERROR', 'E-postadressen din ser ikke ut til å være gyldig - vennligst kontroller at du har skrevet riktig.');
-  define('ENTRY_EMAIL_ADDRESS_ERROR_EXISTS', 'E-postadressen din eksisterer allerede i våre databaser - dersom du har glemt passordet, kan du få tilsendt dette.');
+  define('ENTRY_EMAIL_ADDRESS_CHECK_ERROR', 'E-postadressen din ser ikke ut til å være gyldig. Kontroller at du har skrevet riktig.');
+  define('ENTRY_EMAIL_ADDRESS_ERROR_EXISTS', 'E-postadressen din eksisterer allerede i våre databaser. Dersom du har glemt passordet, kan du få tilsendt et nytt.');
   define('ENTRY_EMAIL_ADDRESS_TEXT', '*');
   define('ENTRY_NICK', 'Brukernavn for forumet:');
   define('ENTRY_NICK_TEXT', ''); // note to display beside nickname input field
@@ -385,11 +385,11 @@ if (!function_exists('zen_date_raw')) {
   define('ENTRY_CITY_TEXT', '*');
   define('ENTRY_STATE', 'Fylke:');
   define('ENTRY_STATE_ERROR', 'Fylket må inneholde minst ' . ENTRY_STATE_MIN_LENGTH . ' tegn.');
-  define('ENTRY_STATE_ERROR_SELECT', 'Vennligst velg ditt fylke.');
+  define('ENTRY_STATE_ERROR_SELECT', 'Du må velge ditt fylke.');
   define('ENTRY_STATE_TEXT', '*');
-  define('JS_STATE_SELECT', '-- Vennligst velg --');
+  define('JS_STATE_SELECT', '-- Du må velge --');
   define('ENTRY_COUNTRY', 'Land:');
-  define('ENTRY_COUNTRY_ERROR', 'Vennligst velg ditt land.');
+  define('ENTRY_COUNTRY_ERROR', 'Du må velge ditt land.');
   define('ENTRY_COUNTRY_TEXT', '*');
   define('ENTRY_TELEPHONE_NUMBER', 'Telefon:');
   define('ENTRY_TELEPHONE_NUMBER_ERROR', 'Telefonnummeret må inneholde minst ' . ENTRY_TELEPHONE_MIN_LENGTH . ' tegn.');
@@ -463,18 +463,18 @@ if (!function_exists('zen_date_raw')) {
 
   define('TEXT_REQUIRED', '<span class="errorText">Påkrevd</span>');
 
-  define('WARNING_INSTALL_DIRECTORY_EXISTS', 'Advarsel: Installasjonskatalogen er ikke slettet enda: ' . $warn_path . '/zc_install. Vennligst slett denne katalogen av sikkerhetsmessige hensyn.');
-  define('WARNING_CONFIG_FILE_WRITEABLE', 'Advarsel: Konfigurasjonsfilen er <strong>ikke</strong> skrivebeskyttet: ' . $warn_path . '/includes/configure.php. Dette er en potensiell sikkerhetsrisiko - vennligst sett riktige tilgangsrettigheter på denne filen.');
+  define('WARNING_INSTALL_DIRECTORY_EXISTS', 'Advarsel: Installasjonskatalogen er ikke slettet enda: ' . $warn_path . '/zc_install. Du må slette denne katalogen av sikkerhetsmessige hensyn.');
+  define('WARNING_CONFIG_FILE_WRITEABLE', 'Advarsel: Konfigurasjonsfilen er <strong>ikke</strong> skrivebeskyttet: ' . $warn_path . '/includes/configure.php. Dette er en potensiell sikkerhetsrisiko, du må derfor angi riktige tilgangsrettigheter på denne filen.');
   define('ERROR_FILE_NOT_REMOVEABLE', 'Advarsel: Kunne ikke fjerne angitt fil. Du må kanksje bruke FTP for å fjerne filen, som følge av serverrettigheter (konfigurasjonsbegrensninger).');
-  define('WARNING_SESSION_AUTO_START', 'Advarsel: session.auto_start er aktivert - vennligst deaktiver denne php-funksjonen i php.ini og restart webserveren.');
+  define('WARNING_SESSION_AUTO_START', 'Advarsel: \'session.auto_start\' er aktivert, deaktiver derfor denne php-funksjonen i php.ini og restart webserveren.');
   define('WARNING_DOWNLOAD_DIRECTORY_NON_EXISTENT', 'Advarsel: Katalogen for nedlastbare produkt finnes ikke: ' . DIR_FS_DOWNLOAD . '. Nedlastbare produkter virker ikke inntil denne katalogen blir opprettet.');
   define('WARNING_SQL_CACHE_DIRECTORY_NON_EXISTENT', 'Advarsel: Katalogen for SQL cache finnes ikke: ' . DIR_FS_SQL_CACHE . '. SQL-cache inntil denne katalogen blir opprettet.');
   define('WARNING_SQL_CACHE_DIRECTORY_NOT_WRITEABLE', 'Advarsel: Kan ikke skrive til katalogen for SQL cache: ' . DIR_FS_SQL_CACHE . '. SQL-cache virker ikke inntil riktige tilgangsrettigheter er satt.');
   define('WARNING_DATABASE_VERSION_OUT_OF_DATE', 'Det ser ut til at din database må oppgraderes. Se Admin->Verktøy->Serverinformasjon for å finne ut hvilken versjon du kjører.');
   define('WARNING_COULD_NOT_LOCATE_LANG_FILE', 'Advarsel: Kunne ikke finne språkfilen: ');
 
-  define('TEXT_CCVAL_ERROR_INVALID_DATE', 'Utløpsdato for kredittkortet er ugyldig, vennligst kontroller og prøv igjen.');
-  define('TEXT_CCVAL_ERROR_INVALID_NUMBER', 'Kredittkort-nummeret er ugyldig, vennligst kontroller og prøv igjen.');
+  define('TEXT_CCVAL_ERROR_INVALID_DATE', 'Utløpsdato for kredittkortet er ugyldig, kontroller dette og forsøk igjen.');
+  define('TEXT_CCVAL_ERROR_INVALID_NUMBER', 'Kredittkortnummeret er ugyldig, kontroller dette og forsøk igjen.');
   define('TEXT_CCVAL_ERROR_UNKNOWN_CARD', 'De første fire sifrene av nummeret som ble skrevet inn er: %s. Dersom dette nummeret er korrekt kan vi dessverre ikke ta i mot betaling fra din korttype, om det er feil kan du prøve igjen.');
 
   define('BOX_INFORMATION_DISCOUNT_COUPONS', 'Rabattkoder');
@@ -483,8 +483,8 @@ if (!function_exists('zen_date_raw')) {
   define('BOX_HEADING_GIFT_VOUCHER', 'Gavekortkonto');
   define('GV_FAQ', 'Gavekort: <acronym title="Ofte Stilte Spørsmål">OSS</acronym>/<acronym title="Frequently Asked Questions">FAQ</acronym>');
   define('ERROR_REDEEMED_AMOUNT', 'Gratulerer, gavekortkontoen din ble fylt opp med ');
-  define('ERROR_NO_REDEEM_CODE', 'Vennligst fyll inn innløsningskode.');
-  define('ERROR_NO_INVALID_REDEEM_GV', 'Ugyldig innløsningskode. Vennligst kontroller og forsøk på nytt.');
+  define('ERROR_NO_REDEEM_CODE', 'Du må fylle inn en innløsningskode.');
+  define('ERROR_NO_INVALID_REDEEM_GV', 'Ugyldig innløsningskode, kontroller dette og forsøk igjen.');
   define('TABLE_HEADING_CREDIT', 'Du har kreditt!');
   define('GV_HAS_VOUCHERA', 'Du har penger tilgode på din gavekortkonto. Dersom du vil <br />
                          kan du sende disse pengene via <a class="pageResults" href="');
@@ -532,15 +532,15 @@ if (!function_exists('zen_date_raw')) {
   define('HEADING_ADDRESS_INFORMATION','Addresseinformasjon');
 
 // cart contents
-  define('PRODUCTS_ORDER_QTY_TEXT_IN_CART','Antall i handlekurv nå: ');
-  define('PRODUCTS_ORDER_QTY_TEXT','Legg i handlekurv: ');
+  define('PRODUCTS_ORDER_QTY_TEXT_IN_CART','Allerede i handlekurv: ');
+  define('PRODUCTS_ORDER_QTY_TEXT','Antall: ');
 
 // success messages for added to cart when display cart is off
 // set to blank for no messages
 // for all pages except where multiple add to cart is used:
-  define('SUCCESS_ADDED_TO_CART_PRODUCT', 'Produkt ble lagt i handlekurv...');
+  define('SUCCESS_ADDED_TO_CART_PRODUCT', 'Produkt ble lagt i handlekurv ...');
 // only for where multiple add to cart is used:
-  define('SUCCESS_ADDED_TO_CART_PRODUCTS', 'Valgte produkter ble lagt i handlekurv...');
+  define('SUCCESS_ADDED_TO_CART_PRODUCTS', 'Valgte produkter ble lagt i handlekurv ...');
 
   define('TEXT_PRODUCT_WEIGHT_UNIT',' kg');
 
@@ -572,10 +572,10 @@ if (!function_exists('zen_date_raw')) {
   define('TEXT_BANNER_BOX_ALL','Besøk våre sponsorer ...');
 
 // boxes defines
-  define('PULL_DOWN_ALL','Vennligst velg');
+  define('PULL_DOWN_ALL','- Velg -');
   define('PULL_DOWN_MANUFACTURERS','- Tilbakestill -');
 // shipping estimator
-  define('PULL_DOWN_SHIPPING_ESTIMATOR_SELECT', 'Vennligst velg');
+  define('PULL_DOWN_SHIPPING_ESTIMATOR_SELECT', '- Velg -');
 
 // general Sort By
   define('TEXT_INFO_SORT_BY','Sortering: ');
@@ -592,7 +592,7 @@ if (!function_exists('zen_date_raw')) {
   define('ERROR_FILE_NOT_SAVED', 'Feil:  Filen ble ikke lagret.');
   define('ERROR_DESTINATION_NOT_WRITEABLE', 'Feil:  Filen er skrivebeskyttet.');
   define('ERROR_DESTINATION_DOES_NOT_EXIST', 'Feil: Filen finnes ikke.');
-  define('ERROR_FILE_TOO_BIG', 'Advarsel: Filen var for stor for opplasting!<br />Ordre kan legges inn men vennligst kontakt butikken for hjelp med opplasting/innsending.');
+  define('ERROR_FILE_TOO_BIG', 'Advarsel: Filen var for stor for opplasting.<br />Ordre kan dessverre ikke legges inn, kontakt butikken for hjelp med opplasting/innsending.');
 // End iii added
 
   define('TEXT_BEFORE_DOWN_FOR_MAINTENANCE', 'MERK: Nettbutikken vil være nede for vedlikehold: ');
@@ -621,7 +621,7 @@ if (!function_exists('zen_date_raw')) {
   define('TEXT_PRODUCTS_MIX_ON_SHOPPING_CART','*Blandede variantverdier er På');
 
   define('ERROR_MAXIMUM_QTY','Antallet som ble lagt i din handlekurv ble justert på grunn av restriksjoner på maksantall per kunde. Se her: ');
-  define('ERROR_CORRECTIONS_HEADING','Vennligst rett opp følgende: <br />');
+  define('ERROR_CORRECTIONS_HEADING','Korriger følgende: <br />');
   define('ERROR_QUANTITY_ADJUSTED', 'Kvantum - feiljustering<br />');
   define('ERROR_QUANTITY_CHANGED_FROM', ', har blitt endret fra: ');
   define('ERROR_QUANTITY_CHANGED_TO', ' til ');
@@ -649,9 +649,9 @@ if (!function_exists('zen_date_raw')) {
   define('WARNING_PRODUCT_QUANTITY_ADJUSTED', 'Antall har blitt endret i forhold til hva som finnes på lager. ');
 
 // error on checkout when $_SESSION['customers_id' does not exist in customers table
-  define('ERROR_CUSTOMERS_ID_INVALID', 'Kundeinformasjon kan ikke valideres!<br />Vennligst logg inn eller gjennopprett din konto...');
+  define('ERROR_CUSTOMERS_ID_INVALID', 'Kundeinformasjon kan ikke valideres.<br />Logg inn eller gjennopprett din konto...');
 
-  define('TABLE_HEADING_FEATURED_PRODUCTS','Våre utvalgte produkter');
+  define('TABLE_HEADING_FEATURED_PRODUCTS','Utvalgte produkter');
 
 // Sjekk for hvilken visning som er valgt i konfigurasjon, for visning av riktig tekst.
 if (SHOW_NEW_PRODUCTS_LIMIT == 0) { 
@@ -705,7 +705,7 @@ if (SHOW_NEW_PRODUCTS_LIMIT == 0) {
 
 // Shipping Estimator
   define('CART_SHIPPING_OPTIONS', 'Forhåndsberegnet leveringspris:');
-  define('CART_SHIPPING_OPTIONS_LOGIN', 'Vennligst <a href="' . zen_href_link(FILENAME_LOGIN, '', 'SSL') . '"><u>logg inn</u></a>, for å vise dine personlige leveringskostnader.');
+  define('CART_SHIPPING_OPTIONS_LOGIN', '<a href="' . zen_href_link(FILENAME_LOGIN, '', 'SSL') . '"><u>Logg inn</u></a> for å se dine personlige leveringskostnader.');
   define('CART_SHIPPING_METHOD_TEXT','Forsendelsesmåter:');
   define('CART_SHIPPING_METHOD_RATES','Pris:');
   define('CART_SHIPPING_METHOD_TO','Send til: ');
@@ -721,7 +721,7 @@ if (SHOW_NEW_PRODUCTS_LIMIT == 0) {
   define('CART_SELECT','Velg');
   define('ERROR_CART_UPDATE', '<strong>Venligst oppdater din ordre</strong>');
   define('IMAGE_BUTTON_UPDATE_CART', 'Oppdater');
-  define('EMPTY_CART_TEXT_NO_QUOTE', 'Beklager! Din økt har utløpt... Vennligst oppdater din handelvogn for sendingsutvalg...');
+  define('EMPTY_CART_TEXT_NO_QUOTE', 'Beklager! Din økt har utløpt ... Oppdater din handelvogn for sendingsutvalg ...');
     define('CART_SHIPPING_QUOTE_CRITERIA', 'Beregning av leveringspris er basert på oppgitt adresseinformasjon:');
 
 // multiple product add to cart

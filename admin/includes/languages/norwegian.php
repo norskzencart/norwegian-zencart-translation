@@ -19,7 +19,7 @@ define('HEADER_LOGO_HEIGHT', '70px');
 define('HEADER_LOGO_IMAGE', 'logo.gif');
 
 // look in your $PATH_LOCALE/locale directory for available locales..
-$locales = array('no_NO.utf-8', 'nb_NO.utf-8', 'no_NO.UTF-8', 'nb_NO.UTF-8', 'nb_NO.utf8', 'no_NO.utf8', 'no', 'nb', 'nob-NO', 'no_NO', 'nb_NO', 'Norwegian_Bokmal', 'nor', 'norwegian', 'bokmal', 'bokmål');
+$locales = array('nb-NO', 'no-NO', 'no_NO.ISO8859-1', 'nb_NO.ISO-8859-1', 'no', 'nb', 'no_NO', 'nb_NO', 'nor', 'norwegian', 'bokmal');
 @setlocale(LC_TIME, $locales);
 define('DATE_FORMAT_SHORT', '%d.%m.%Y');  // this is used for strftime()
 define('DATE_FORMAT_LONG', '%A %d. %B %Y'); // this is used for strftime()
@@ -888,5 +888,4 @@ define('ERROR_DATABASE_MAINTENANCE_NEEDED', '<a href="http://www.zen-cart.com/co
 // include additional files:
   require(DIR_WS_LANGUAGES . $_SESSION['language'] . '/' . FILENAME_EMAIL_EXTRAS);
   include(zen_get_file_directory(DIR_FS_CATALOG_LANGUAGES . $_SESSION['language'] . '/', FILENAME_OTHER_IMAGES_NAMES, 'false'));
-
 
