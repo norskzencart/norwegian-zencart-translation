@@ -10,7 +10,7 @@
 define('NAVBAR_TITLE_1', 'Kasse');
 define('NAVBAR_TITLE_2', 'Bekreftelse');
 
-define('HEADING_TITLE', 'Steg 3 av 3 - Kontroller og bekreft din ordre');
+define('HEADING_TITLE', 'Kontroller og bekreft din ordre');
 
 define('HEADING_BILLING_ADDRESS', 'Fakturaadresse');
 define('HEADING_DELIVERY_ADDRESS', 'Leveringsadresse');

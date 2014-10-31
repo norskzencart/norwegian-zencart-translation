@@ -7,10 +7,10 @@
  * @version $Id: checkout_payment.php 105 2012-03-26 18:40:42Z syntaxerror.no $
  */
 
-define('NAVBAR_TITLE_1', 'Kasse - Steg 1');
-define('NAVBAR_TITLE_2', 'Betalingsmåte - Steg 2');
+define('NAVBAR_TITLE_1', 'Kasse');
+define('NAVBAR_TITLE_2', 'Betalingsmåte');
 
-define('HEADING_TITLE', 'Steg 2 av 3 - Betalingsinformasjon');
+define('HEADING_TITLE', 'Betalingsinformasjon');
 
 define('TABLE_HEADING_BILLING_ADDRESS', 'Fakturaadresse');
 define('TEXT_SELECTED_BILLING_DESTINATION', 'Du kan endre betalingsadressen ved å trykke på knappen <em>Endre adresse</em>.');

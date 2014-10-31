@@ -10,7 +10,7 @@
 define('NAVBAR_TITLE_1', 'Kasse');
 define('NAVBAR_TITLE_2', 'Leveringsmåte');
 
-define('HEADING_TITLE', 'Steg 1 av 3 - Leveringsinformasjon');
+define('HEADING_TITLE', 'Leveringsinformasjon');
 
 define('TABLE_HEADING_SHIPPING_ADDRESS', 'Mottakeradresse');
 define('TEXT_CHOOSE_SHIPPING_DESTINATION', 'Din ordre vil bli sendt til denne adressen.<br /><br />Du kan endre denne ved å trykke på knappen "<em>Endre adresse</em>".');
