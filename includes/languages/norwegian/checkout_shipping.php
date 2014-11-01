@@ -25,8 +25,8 @@ define('TEXT_NO_SHIPPING_AVAILABLE','<span class="alert">Beklager, vi leverer ik
 
 define('TABLE_HEADING_COMMENTS', 'Kommentarer til denne ordren');
 
-define('TITLE_CONTINUE_CHECKOUT_PROCEDURE', 'Fortsett til steg 2');
-define('TEXT_CONTINUE_CHECKOUT_PROCEDURE', '- for å velg din betalingsmåte.');
+define('TITLE_CONTINUE_CHECKOUT_PROCEDURE', '<strong>Fortsett til neste steg</strong>');
+define('TEXT_CONTINUE_CHECKOUT_PROCEDURE', '- for å velg betalingsmåte.');
 
 // when free shipping for orders over $XX.00 is active
 define('FREE_SHIPPING_TITLE', 'Gratis levering');

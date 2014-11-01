@@ -25,8 +25,8 @@ define('TABLE_HEADING_COMMENTS', 'Kommentarer til ordren');
 define('TITLE_NO_PAYMENT_OPTIONS_AVAILABLE', 'Ikke tilgjengelig for øyeblikket');
 define('TEXT_NO_PAYMENT_OPTIONS_AVAILABLE','<span class="alert">Beklager, men vi har ingen betalingsvalg tilgjengelig for ditt land/område for øyeblikket.</span><br />Ta kontakt for å avtale alternativ løsning.');
 
-define('TITLE_CONTINUE_CHECKOUT_PROCEDURE', '<strong>Fortsett til steg 3</strong>');
-define('TEXT_CONTINUE_CHECKOUT_PROCEDURE', '- for å kontrollere din ordre.');
+define('TITLE_CONTINUE_CHECKOUT_PROCEDURE', '<strong>Fortsett til neste steg</strong>');
+define('TEXT_CONTINUE_CHECKOUT_PROCEDURE', '- for å kontrollere ordren.');
 
 define('TABLE_HEADING_CONDITIONS', '<span class="termsconditions">Våre betingelser</span>');
 define('TEXT_CONDITIONS_DESCRIPTION', '<span class="termsdescription">Vennligst bekreft at du har lest og akseptert våre betingelser tilknyttet denne ordren ved å krysse av for dette i feltet nedenfor. <a target="_blank" href="' . zen_href_link(FILENAME_CONDITIONS, '', 'SSL') . '"><u>Klikk her for å lese våre betingelser</u></a>.');
