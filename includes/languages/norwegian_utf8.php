@@ -1,10 +1,10 @@
 <?php
 /**
  * @package languageDefines
- * @copyright Copyright 2003-2011 Zen Cart Development Team
+ * @copyright Copyright 2003-2014 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
- * @version $Id: norwegian_utf8.php 137 2013-06-03 10:13:32Z syntaxerror.no $
+ * @version GIT: $Id: Author: ajeh  Modified in v1.5.4 $
  */
 
 // FOLLOWING WERE moved to meta_tags.php
@@ -761,6 +761,7 @@ if (SHOW_NEW_PRODUCTS_LIMIT == 0) {
 
 // misc
   define('COLON_SPACER', ':&nbsp;&nbsp;');
+  define('PAYMENT_JAVASCRIPT_DISABLED', 'Utsjekkingen kunne ikke fortsettes ettersom Javascript er deaktivert. Du må aktivere dette før du kan fortsette.');
 
 // table headings for cart display and upcoming products
   define('TABLE_HEADING_QUANTITY', 'Ant.');

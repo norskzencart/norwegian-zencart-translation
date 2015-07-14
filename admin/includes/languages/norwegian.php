@@ -1,11 +1,11 @@
 <?php
 /**
  * @package admin
- * @copyright Copyright 2003-2012 Zen Cart Development Team
- * @copyright Copyright Translation 2006-2012 Rune Rasmussen http://www.syntaxerror.no
+ * @copyright Copyright 2003-2014 Zen Cart Development Team
+ * @copyright Copyright Translation 2006-2015 Rune Rasmussen http://www.syntaxerror.no
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
- * @version $Id: norwegian.php 107 2012-04-15 12:04:10Z syntaxerror.no $
+ * @version GIT: $Id: Author: DrByte  Modified in v1.5.4 $
  */
 if (!defined('IS_ADMIN_FLAG'))
 {
@@ -864,6 +864,13 @@ define('ENTRY_NOTHING_TO_SEND','Du har ikke fylt inn noe innhold for din melding
   define('WARNING_ADMIN_ACTIVITY_LOG_DATE', 'Advarsel: Administrasjonens aktivitetlogg har over 2 måneder gamle oppføringer og bør tømmes.');
   define('WARNING_ADMIN_ACTIVITY_LOG_RECORDS', 'Advarsel: Administrasjonens aktivitetlogg har over 50.000 oppføringer og bør tømmes.');
   define('RESET_ADMIN_ACTIVITY_LOG', 'Du kan administrere aktivitetsloggen via \'Tilgangskontroll -> Aktivitetslogger\' dersom du har rettigheter til dette.');
+  define('TEXT_ACTIVITY_LOG_ACCESSED', 'Administrasjonens aktivitetlogg åpnet. Utdataformat: %s. Filter: %s. %s');
+  define('TEXT_ERROR_FAILED_ADMIN_LOGIN_FOR_USER', 'Feilet innloggingsforsøk admin: ');
+  define('TEXT_ERROR_ATTEMPTED_TO_LOG_IN_TO_LOCKED_ACCOUNT', 'Forsøkte logge inn på en låst konto:');
+  define('TEXT_ERROR_ATTEMPTED_ADMIN_LOGIN_WITHOUT_CSRF_TOKEN', 'Forsøkte logge inn uten CSRF-token.');
+  define('TEXT_ERROR_ATTEMPTED_ADMIN_LOGIN_WITHOUT_USERNAME', 'Forsøkte logge inn uten brukernavn.');
+  define('TEXT_ERROR_INCORRECT_PASSWORD_DURING_RESET_FOR_USER', 'Feil passord under forsøk på tilbakestilling for: ');
+
 
   define('CATEGORY_HAS_SUBCATEGORIES', 'Merk: Kategori har underkategori<br />Produkt kan ikke legges til');
 
@@ -888,4 +895,5 @@ define('ERROR_DATABASE_MAINTENANCE_NEEDED', '<a href="http://www.zen-cart.com/co
 // include additional files:
   require(DIR_WS_LANGUAGES . $_SESSION['language'] . '/' . FILENAME_EMAIL_EXTRAS);
   include(zen_get_file_directory(DIR_FS_CATALOG_LANGUAGES . $_SESSION['language'] . '/', FILENAME_OTHER_IMAGES_NAMES, 'false'));
+
 
