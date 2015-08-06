@@ -262,7 +262,7 @@ if (!function_exists('zen_date_raw')) {
 
 // shopping_cart box text in sideboxes/shopping_cart.php
   define('BOX_HEADING_SHOPPING_CART', 'Handlekurv');
-  define('BOX_SHOPPING_CART_EMPTY', 'Ingen varer');
+  define('BOX_SHOPPING_CART_EMPTY', 'Handlekurven er tom');
   define('BOX_SHOPPING_CART_DIVIDER', ' stk.-&nbsp;');
 
 // order_history box text in sideboxes/order_history.php
