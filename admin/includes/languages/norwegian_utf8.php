@@ -1,11 +1,11 @@
 <?php
 /**
  * @package admin
- * @copyright Copyright 2003-2014 Zen Cart Development Team
- * @copyright Copyright Translation 2006-2015 Rune Rasmussen http://www.syntaxerror.no
+ * @copyright Copyright 2003-2016 Zen Cart Development Team
+ * @copyright Copyright Translation 2006-2016 Rune Rasmussen http://www.syntaxerror.no
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
- * @version GIT: $Id: Author: DrByte  Modified in v1.5.4 $
+ * @version GIT: $Id: Author: DrByte  Modified in v1.5.5 $
  */
 if (!defined('IS_ADMIN_FLAG'))
 {
@@ -225,7 +225,7 @@ define('CHARSET', 'utf-8');
 
 // header text in includes/header.php
 define('HEADER_TITLE_TOP', 'Oversikt');
-define('HEADER_TITLE_SUPPORT_SITE', 'Supportside');
+define('HEADER_TITLE_SUPPORT_SITE', 'Brukerstøtte');
 define('HEADER_TITLE_ONLINE_CATALOG', 'Butikken');
 define('HEADER_TITLE_VERSION', 'Serverinformasjon');
 define('HEADER_TITLE_ACCOUNT', 'Konto');
@@ -244,7 +244,11 @@ define('HEADER_TITLE_LOGOFF', 'Logg av');
 define('MALE', 'Mann');
 define('FEMALE', 'Kvinne');
 
+define('TEXT_CHECK_ALL', 'Velg alle');
+define('TEXT_UNCHECK_ALL', 'Velg bort alle');
 define('NONE', 'Ingen');
+
+define('TEXT_UNKNOWN', 'Ukjent');
 
 // configuration box text
 define('BOX_HEADING_CONFIGURATION', 'Konfigurasjon');
@@ -359,7 +363,7 @@ define('BOX_LOCALIZATION_LANGUAGES', 'Språk');
 define('BOX_LOCALIZATION_ORDERS_STATUS', 'Ordrestatus');
 
 // gift vouchers box text
-define('BOX_HEADING_GV_ADMIN', 'Gavekort/Rabattkoder');
+define('BOX_HEADING_GV_ADMIN', 'Rabatter');
 define('BOX_GV_ADMIN_QUEUE',  'Gavekortkø');
 define('BOX_GV_ADMIN_MAIL', 'Send gavekort');
 define('BOX_GV_ADMIN_SENT', 'Sendte gavekort');
@@ -406,6 +410,7 @@ define('JS_COUNTRY', '* \'Land\' må velges.\n');
 define('JS_TELEPHONE', '* \'Telefonnummer\' må inneholde minimum ' . ENTRY_TELEPHONE_MIN_LENGTH . ' tegn.\n');
 
 define('JS_ORDER_DOES_NOT_EXIST', 'Ordrenummer %s ekisterer ikke!');
+define('TEXT_NO_ORDER_HISTORY', 'Det finnes ingen ordrehistorikk');
 
 define('CATEGORY_PERSONAL', 'Personlig');
 define('CATEGORY_ADDRESS', 'Adresse');
@@ -503,6 +508,7 @@ define('IMAGE_PERMISSIONS', 'Rediger rettigheter');
 define('IMAGE_PREVIEW', 'Forhåndsvis');
 define('IMAGE_RESTORE', 'Gjenopprett');
 define('IMAGE_RESET', 'Tilbakestill');
+define('IMAGE_RESET_PWD', 'Tilbakestill passord');
 define('IMAGE_SAVE', 'Lagre');
 define('IMAGE_SEARCH', 'Søk');
 define('IMAGE_SELECT', 'Velg');
@@ -529,6 +535,9 @@ define('IMAGE_REMOVE_SPECIAL','Fjern tilbudsprisinnformasjon');
 define('IMAGE_REMOVE_FEATURED','Fjern utvalgt produktinnformasjon');
 define('IMAGE_INSTALL_SPECIAL', 'Legg til tilbudsprisinnformasjon');
 define('IMAGE_INSTALL_FEATURED', 'Legg til utvalgt produktinformasjon');
+
+define('TEXT_VERSION_CHECK_BUTTON', 'Se etter ny versjon');
+define('TEXT_BUTTON_RESET_ACTIVITY_LOG', 'Vis aktivitetslogg');
 
 define('ICON_PRODUCTS_PRICE_MANAGER','Produktprisbehandling');
 define('ICON_COPY_TO', 'Kopier til');
@@ -589,12 +598,9 @@ define('TEXT_FIELD_REQUIRED', '&nbsp;<span class="fieldRequired">* Påkrevd</spa
 
 define('ERROR_NO_DEFAULT_CURRENCY_DEFINED', 'Feil: Det er ikke angitt noen valuta som standard, angi en under Verktøy ->Lokalisering->Valuta');
 
-define('TEXT_CACHE_CATEGORIES', 'Kategoriboks');
-define('TEXT_CACHE_MANUFACTURERS', 'Produsentboks');
-define('TEXT_CACHE_ALSO_PURCHASED', 'Også kjøpt-modul');
-
 define('TEXT_NONE', '--ingen--');
 define('TEXT_TOP', 'Topp');
+define('PLEASE_SELECT', 'Velg ...');
 
 define('ERROR_DESTINATION_DOES_NOT_EXIST', 'Feil: Mål eksisterer ikke %s');
 define('ERROR_DESTINATION_NOT_WRITEABLE', 'Feil: Mål er ikke skrivbar %s');
@@ -608,11 +614,17 @@ define('WARNING_DATABASE_VERSION_OUT_OF_DATE','Din database ser ut til å behøv
 define('WARN_DATABASE_VERSION_PROBLEM','true'); //set to false to turn off warnings about database version mismatches
 define('WARNING_ADMIN_DOWN_FOR_MAINTENANCE', '<strong>ADVARSEL:</strong> Siden er for øyeblikket nede for vedlikehold, du bør <b>IKKE</b> gjøre endringer (f.eks legge til kunder, produkter osv) her før dette arbeidet er fullført, med mindre du kjenner grunnen til vedlikeholdet og har fått klarsignal fra administrator...<br />MERK: Mange betalings- og sendingsmoduler kan ikke testes når butikken er i Nede til vedlikehold-modus');
 define('WARNING_BACKUP_CFG_FILES_TO_DELETE', 'Advarsel: Disse filene bør slettes for å unngå sikkerhetsrisiko: ');
-define('WARNING_INSTALL_DIRECTORY_EXISTS', 'Advarsel: Installasjonsmappen finnes i: ' . DIR_FS_CATALOG . 'zc_install. Vennligst fjern denne mappen av sikkerhetsgrunner.');
-define('WARNING_CONFIG_FILE_WRITEABLE', 'Advarsel: Din konfigurasjonsfil: %sincludes/configure.php kan skrives til. Dette er en sikkrehetsrisiko, vennligst angi riktige rettigheter på denne filen (Ikke skrivabr, CHMOD 644 eller 444 er vanlig).');
+define('WARNING_INSTALL_DIRECTORY_EXISTS', 'Advarsel: Installasjonsmappen finnes i: %s. Vennligst fjern denne mappen av sikkerhetsgrunner.');
+define('WARNING_CONFIG_FILE_WRITEABLE', 'Advarsel: Din konfigurasjonsfil %s er skrivbar. Dette er en sikkrehetsrisiko, du bør angi riktige rettigheter på denne filen (Ikke skrivbar, CHMOD 644 eller 444 er vanlig).');
 define('WARNING_COULD_NOT_LOCATE_LANG_FILE', 'Advarsel: Kunne ikke finne språkfilen: ');
 define('ERROR_MODULE_REMOVAL_PROHIBITED', 'Feil: Modulfjerning forbudt: ');
 define('WARNING_REVIEW_ROGUE_ACTIVITY', 'ALARM: Vennligst sjekk for potensiell XSS-aktivitet:');
+
+define('ERROR_FILE_NOT_REMOVEABLE', 'Feil: Kunne ikke fjerne den spesifiserte fila. Du må kanskje bruke FTP for å fjerne fila, som følge av en begrensning i konfigurasjon av serverrettigheter.');
+define('WARNING_SESSION_AUTO_START', 'Advarsel: session.auto_start er aktivert. Denne PHP-egenskapen bør deaktiveres i php.ini (omstart av server kan være nødvendig for å aktivere endring).');
+define('WARNING_DOWNLOAD_DIRECTORY_NON_EXISTENT', 'Advarsel: Mappen for nedlastbare produkter eksisterer ikke: ' . DIR_FS_DOWNLOAD . '. Nedlastbare produkter vil ikke virke før denne mappen er tilgjengelig.');
+define('WARNING_SQL_CACHE_DIRECTORY_NON_EXISTENT', 'Advarsel: Mappen for SQL-mellomlager eksisterer ikke: ' . DIR_FS_SQL_CACHE . '. SQL-mellomlagring vil ikke virke før denne mappen er tilgjengelig.');
+define('WARNING_SQL_CACHE_DIRECTORY_NOT_WRITEABLE', 'Advarsel: Det går ikke å skrive til mappe for SQL-mellomlager: ' . DIR_FS_SQL_CACHE . '. SQL-mellomlagring vil ikke virke før riktige tilgangsrettigheter er satt for denne mappen.');
 
 define('_JANUARY', 'Januar');
 define('_FEBRUARY', 'Februar');
@@ -675,7 +687,7 @@ define('NOT_INSTALLED_TEXT','Ikke installert');
   define('IMAGE_UPDATE_SORT','Oppdater sortering');
   define('IMAGE_EDIT_PRODUCT','Rediger produkt');
   define('IMAGE_EDIT_ATTRIBUTES','Endre varianter');
-  define('TEXT_NEW_PRODUCT', 'Produkt i kategori: &quot;%s&quot;');
+  define('TEXT_NEW_PRODUCT', 'Produkt i kategori: %s');
   define('IMAGE_OPTIONS_VALUES','Variantgrupper og -verdier');
   define('TEXT_PRODUCTS_PRICE_MANAGER','Produktpriser');
   define('TEXT_PRODUCT_EDIT','Rediger produkt');
@@ -699,7 +711,7 @@ define('NOT_INSTALLED_TEXT','Ikke installert');
 // search filters
   define('TEXT_INFO_SEARCH_DETAIL_FILTER','Søkefiltre: ');
   define('HEADING_TITLE_SEARCH_DETAIL','Søk: ');
-  define('HEADING_TITLE_SEARCH_DETAIL_REPORTS', 'Søk etter produkt(er) - Adskilt med kommaby commas');
+  define('HEADING_TITLE_SEARCH_DETAIL_REPORTS', 'Søk etter produkt-ider (adskilt med komma)');
   define('HEADING_TITLE_SEARCH_DETAIL_REPORTS_NAME_MODEL', 'Søk etter produktnavn/-modell');
 
   define('PREV_NEXT_PRODUCT', 'Produkter: ');
@@ -712,8 +724,8 @@ define('NOT_INSTALLED_TEXT','Ikke installert');
   define('ERROR_ADMIN_DEMO','Admin demo er aktiv... funksjonen(e) du prøver å bruke har blitt deaktivert');
 
 // Version Check notices
-  define('TEXT_VERSION_CHECK_NEW_VER','Ny versjon tilgjengelig: v');
-  define('TEXT_VERSION_CHECK_NEW_PATCH','Ny oppdatering tilgjengelig: v');
+  define('TEXT_VERSION_CHECK_NEW_VER','<span class="alertVersionNew">Ny versjon tilgjengelig:</span> v');
+  define('TEXT_VERSION_CHECK_NEW_PATCH','<span class="alertVersionNew">Ny oppdatering tilgjengelig:</span> v');
   define('TEXT_VERSION_CHECK_PATCH','oppdatering');
   define('TEXT_VERSION_CHECK_DOWNLOAD','Last ned her');
   define('TEXT_VERSION_CHECK_CURRENT','Din versjon av Zen Cart&trade; ser ut til å være oppdatert.');
@@ -782,6 +794,8 @@ define('PRODUCTS_QUANTITY_MAX_TEXT_LISTING', 'Maks:');
 // Sale Maker Sale Price
   define('PRODUCT_PRICE_SALE','Salg:&nbsp;');
 
+define('TEXT_PRICED_BY_ATTRIBUTES', 'Priset etter varianter');
+
 // Rich Text / HTML resources
 define('TEXT_HTML_EDITOR_NOT_DEFINED','Hvis du ikke har en HTML-behandler eller har JavaScript deaktivert, så kan du skrive HTML-tekst her manuelt.');
 define('TEXT_WARNING_HTML_DISABLED','<span class = "main">Merk: Du bruker ren tekst e-post. Hvis du ønsker å sende med HTML må du aktivere "bruk MIME HTML" i e-postvalgene under konfigurasjon</span>');
@@ -810,7 +824,7 @@ define('ENTRY_NOTHING_TO_SEND','Du har ikke fylt inn noe innhold for din melding
   define('TEXT_SORT_CATEGORIES_SORT_ORDER_PRODUCTS_NAME', 'Kategorisortering, Kategorinavn');
   define('TEXT_SORT_CATEGORIES_NAME', 'Kategorinavn');
 
-
+  define('TEXT_SELECT_MAIN_DIRECTORY', 'Hovedmappe for bilder');
 
   define('TABLE_HEADING_YES','Ja');
   define('TABLE_HEADING_NO','Nei');
@@ -889,6 +903,11 @@ define('TEXT_NOEMAIL', 'Ingen e-post');
 define('BOX_HEADING_PRODUCT_TYPES', 'Produkttyper');
 
 define('ERROR_DATABASE_MAINTENANCE_NEEDED', '<a href="http://www.zen-cart.com/content.php?334-ERROR-0071-There-appears-to-be-a-problem-with-the-database-Maintenance-is-required" target="_blank">ERROR 0071: Det virker å være problmer med databasen, vedlikehold må utføres.</a>');
+
+// moved from currencies file:
+define('TEXT_INFO_CURRENCY_UPDATED', 'Vekslingskursen for %s (%s) ble vellykket oppdatert til %s via %s.');
+define('ERROR_CURRENCY_INVALID', 'Feil: Vekslingskursen for %s (%s) ble IKKE oppdatert via %s. Det er tilsynelatende ikke en gyldig valutakode?');
+define('WARNING_PRIMARY_SERVER_FAILED', 'Advarsel: Primær server for vekslingskurs (%s) feilet for %s (%s), forsøker med sekundær server.');
 
 
 ///////////////////////////////////////////////////////////
