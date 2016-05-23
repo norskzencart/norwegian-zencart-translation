@@ -1,10 +1,10 @@
 <?php
 /**
  * @package languageDefines
- * @copyright Copyright 2003-2014 Zen Cart Development Team
+ * @copyright Copyright 2003-2016 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
- * @version GIT: $Id: Author: ajeh  Modified in v1.5.4 $
+ * @version GIT: $Id: Author: DrByte  Modified in v1.5.5 $
  */
 
 // FOLLOWING WERE moved to meta_tags.php
@@ -294,7 +294,6 @@ if (!function_exists('zen_date_raw')) {
   define('BOX_INFORMATION_CONDITIONS', 'Betingelser');
   define('BOX_INFORMATION_SHIPPING', 'Levering og retur');
   define('BOX_INFORMATION_CONTACT', 'Kontakt oss');
-  define('BOX_BBINDEX', 'Forum');
   define('BOX_INFORMATION_UNSUBSCRIBE', 'Avbestill nyhetsbrev');
 
   define('BOX_INFORMATION_SITE_MAP', 'Sidekart');
@@ -437,10 +436,10 @@ if (!function_exists('zen_date_raw')) {
   define('PREVNEXT_TITLE_PAGE_NO', 'Side %d');
   define('PREVNEXT_TITLE_PREV_SET_OF_NO_PAGE', 'Forrige sett med %d sider');
   define('PREVNEXT_TITLE_NEXT_SET_OF_NO_PAGE', 'Neste sett med %d sider');
-  define('PREVNEXT_BUTTON_FIRST', '&lt;&lt;FØRSTE');
-  define('PREVNEXT_BUTTON_PREV', '[&lt;&lt;&nbsp;Forrige]');
-  define('PREVNEXT_BUTTON_NEXT', '[Neste&nbsp;&gt;&gt;]');
-  define('PREVNEXT_BUTTON_LAST', 'SISTE&gt;&gt;');
+  define('PREVNEXT_BUTTON_FIRST', '&laquo;FØRSTE');
+  define('PREVNEXT_BUTTON_PREV', '[&laquo;&nbsp;Forrige]');
+  define('PREVNEXT_BUTTON_NEXT', '[Neste&nbsp;&raquo;]');
+  define('PREVNEXT_BUTTON_LAST', 'SISTE&raquo;');
 
   define('TEXT_BASE_PRICE','Fra: ');
 
