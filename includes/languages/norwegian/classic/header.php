@@ -1,7 +1,7 @@
 <?php
 /**
  * @package languageDefines
- * @copyright Copyright 2003-2012 Zen Cart Development Team
+ * @copyright Copyright 2003-2016 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: header.php 42 2010-08-15 22:21:21Z syntaxerror.no $
@@ -27,3 +27,4 @@ define('HEADER_LOGO_IMAGE', 'logo.gif');
 // header Search Button/Box Search Button
 define('HEADER_SEARCH_BUTTON','Søk');
 define('HEADER_SEARCH_DEFAULT_TEXT','Fyll inn søkeord her');
+define('SEARCH_DEFAULT_TEXT', 'søk her');

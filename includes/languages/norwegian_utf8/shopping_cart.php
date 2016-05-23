@@ -1,16 +1,17 @@
 <?php
 /**
  * @package languageDefines
- * @copyright Copyright 2003-2006 Zen Cart Development Team
+ * @copyright Copyright 2003-2016 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: shopping_cart.php 93 2012-02-16 23:01:05Z syntaxerror.no $
  */
 
+define('TEXT_INFORMATION', 'Du kan fortsette til kassen ved å klikke \'Kasse\'-knappen nedenfor. Levering, avgifter og rabatter vil bli behandlet på følgende sider.');
+
 define('NAVBAR_TITLE', 'Handlekurven');
 define('HEADING_TITLE', 'Innholdet i din handlekurv');
 define('HEADING_TITLE_EMPTY', 'Din handlekurv');
-define('TEXT_INFORMATION', 'Her i handlekurven kan du endre antall produkter, eller du kan fjerne produkt(er) som du ikke ønsker.');
 define('TABLE_HEADING_REMOVE', 'Fjern');
 define('TABLE_HEADING_QUANTITY', 'Antall');
 define('TABLE_HEADING_MODEL', 'Modell');

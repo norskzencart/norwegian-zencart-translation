@@ -1,7 +1,7 @@
 <?php
 /**
  * @package languageDefines
- * @copyright Copyright 2003-2006 Zen Cart Development Team
+ * @copyright Copyright 2003-2016 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: checkout_payment.php 105 2012-03-26 18:40:42Z syntaxerror.no $
@@ -29,7 +29,7 @@ define('TITLE_CONTINUE_CHECKOUT_PROCEDURE', '<strong>Fortsett til neste steg</st
 define('TEXT_CONTINUE_CHECKOUT_PROCEDURE', '- for å kontrollere ordren.');
 
 define('TABLE_HEADING_CONDITIONS', '<span class="termsconditions">Våre betingelser</span>');
-define('TEXT_CONDITIONS_DESCRIPTION', '<span class="termsdescription">Vennligst bekreft at du har lest og akseptert våre betingelser tilknyttet denne ordren ved å krysse av for dette i feltet nedenfor. <a target="_blank" href="' . zen_href_link(FILENAME_CONDITIONS, '', 'SSL') . '"><u>Klikk her for å lese våre betingelser</u></a>.');
+define('TEXT_CONDITIONS_DESCRIPTION', '<span class="termsdescription">Vennligst bekreft at du har lest og akseptert våre betingelser tilknyttet denne ordren ved å krysse av for dette i feltet nedenfor. <a href="' . zen_href_link(FILENAME_CONDITIONS, '', 'SSL') . '" target="_blank"><span class="pseudolink">Klikk her for å lese våre betingelser</span></a>.');
 define('TEXT_CONDITIONS_CONFIRM', '<span class="termsiagree">Jeg har lest og akseptert betingelsene tilknyttet denne ordren.</span>');
 
 define('TEXT_CHECKOUT_AMOUNT_DUE', 'Totalsum: ');

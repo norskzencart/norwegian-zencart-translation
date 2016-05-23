@@ -1,7 +1,7 @@
 <?php
 /**
  * @package languageDefines
- * @copyright Copyright 2003-2006 Zen Cart Development Team
+ * @copyright Copyright 2003-2016 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: button_names.php 107 2012-04-15 12:04:10Z syntaxerror.no $
@@ -59,14 +59,14 @@ define('BUTTON_IMAGE_CONTINUE_CHECKOUT', 'button_continue_checkout.gif');
 define('BUTTON_IMAGE_CREATE_ACCOUNT', 'button_create_account.gif');
 define('BUTTON_IMAGE_LOG_OFF', 'button_logoff.gif');
 /*
- * ALT tags used for buttons
+ * ALT text is used as Button Text, or for the ALT tag on image-buttons
  */
 
 define('BUTTON_CREATE_ACCOUNT_ALT', 'Registrer konto');
 define('BUTTON_LOG_OFF_ALT', 'Logg av');
 define('BUTTON_ADD_TO_CART_ALT', 'Legg i handlekurv');
 define('BUTTON_ADD_ADDRESS_ALT', 'Legg til adresse');
-define('BUTTON_ADD_PRODUCTS_TO_CART_ALT','Legg produkter i handlekurv');
+define('BUTTON_ADD_PRODUCTS_TO_CART_ALT','Legg valgte i handlekurv');
 define('BUTTON_BACK_ALT', 'Tilbake');
 define('BUTTON_BUY_NOW_ALT', 'Kjøp nå');
 define('BUTTON_CANCEL_ALT', 'Avbryt');
@@ -82,6 +82,7 @@ define('BUTTON_DOWNLOAD_ALT', 'Last ned nå');
 define('BUTTON_EDIT_SMALL_ALT', 'Endre');
 define('BUTTON_IN_CART_ALT', 'Legg i handlekurv');
 define('BUTTON_LOGIN_ALT', 'Logg inn');
+define('BUTTON_LOOKUP_ALT', 'Slå opp');
 define('BUTTON_NEXT_ALT', 'Neste');
 define('BUTTON_PREVIOUS_ALT', 'Tilbake');
 define('BUTTON_REDEEM_ALT', 'Løs inn');
@@ -102,3 +103,5 @@ define('BUTTON_WRITE_REVIEW_ALT', 'Skriv omtale');
 define('BUTTON_READ_REVIEWS_ALT', 'Les omtalen');
 define('BUTTON_GOTO_PROD_DETAILS_ALT', 'Vis detaljer');
 define('BUTTON_MORE_REVIEWS_ALT', 'Flere omtaler');
+define('BUTTON_VIEW_ALL_ALT', 'Vis alle');
+
