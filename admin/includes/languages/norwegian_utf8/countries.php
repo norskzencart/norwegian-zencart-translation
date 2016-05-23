@@ -1,9 +1,9 @@
 <?php
 /**
  * @package admin
- * @copyright Copyright 2003-2009 Zen Cart Development Team
+ * @copyright Copyright 2003-2016 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
- * @copyright Copyright Translation 2006-2010 Rune Rasmussen - syntaxerror.no
+ * @copyright Copyright Translation 2006-2016 Rune Rasmussen - syntaxerror.no
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: countries.php 93 2012-02-16 23:01:05Z syntaxerror.no $
  */
@@ -27,4 +27,4 @@ define('TEXT_INFO_HEADING_NEW_COUNTRY', 'Nytt land');
 define('TEXT_INFO_HEADING_EDIT_COUNTRY', 'Rediger land');
 define('TEXT_INFO_HEADING_DELETE_COUNTRY', 'Slett land');
 define('ERROR_COUNTRY_IN_USE', 'FEIL: Kan ikke slette land ettersom det er tilknyttet en kundeoppføring.');
-define('ISO_COUNTRY_CODES_LINK', '<a href="http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm" target="_blank">Referanseliste for \'ISO 3166\'-landskoder</a>');
+define('ISO_COUNTRY_CODES_LINK', '<a href="http://www.iso.org/iso/country_codes/country_codes" target="_blank">Referanseliste for \'ISO 3166\'-landskoder</a>');

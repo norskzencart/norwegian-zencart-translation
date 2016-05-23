@@ -1,8 +1,8 @@
 <?php
 /**
  * @package admin
- * @copyright Copyright 2003-2012 Zen Cart Development Team
- * @copyright Copyright Translation 2006-2012 Rune Rasmussen - http://www.syntaxerror.no
+ * @copyright Copyright 2003-2016 Zen Cart Development Team
+ * @copyright Copyright Translation 2006-2016 Rune Rasmussen - http://www.syntaxerror.no
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: products_price_manager.php 93 2012-02-16 23:01:05Z syntaxerror.no $
  */
@@ -23,6 +23,8 @@ define('TEXT_PRODUCT_INFO', 'Produktinfo:');
 define('TEXT_PRODUCTS_PRICE_INFO', 'Produktprisinfo');
 define('TEXT_PRODUCTS_MODEL','Modell:');
 define('TEXT_PRICE', 'Pris');
+define('TEXT_PRICE_NET', 'Pris (Netto)');
+define('TEXT_PRICE_GROSS', 'Pris (Brutto)');
 define('TEXT_PRODUCT_AVAILABLE_DATE', 'Tilgjengelig:');
 define('TEXT_PRODUCTS_STATUS', 'Produktstatus:');
 define('TEXT_PRODUCT_AVAILABLE', 'På lager');
@@ -57,6 +59,8 @@ define('TEXT_FEATURED_CONFIRM_DELETE', 'Vennligst bekreft at du vil slette \'Utv
 
 define('TEXT_SPECIALS_PRODUCT', 'Produkt:');
 define('TEXT_SPECIALS_SPECIAL_PRICE', 'Tilbudspris:');
+define('TEXT_SPECIALS_SPECIAL_PRICE_NET', 'Tilbudspris (Netto):');
+define('TEXT_SPECIALS_SPECIAL_PRICE_GROSS', 'Tilbudspris (Brutto):');
 define('TEXT_SPECIALS_EXPIRES_DATE', 'Utgår:');
 define('TEXT_SPECIALS_AVAILABLE_DATE', 'Tilgjengelig:');
 define('TEXT_SPECIALS_PRICE_TIP', '<b>Tilbudsmerknader:</b><ul><li>Du kan skrive inn en prosent som skal trekkes i fra i tilbudspris-feltet, f.eks.: <b>20%</b></li><li>Hvis du skriver en ny pris, må desimalpunktet være en \'.\' (desimal-punktum), f.eks: <b>49.99</b></li><li>La utgår være tom for ingen utløp.</li></ul>');

@@ -1,8 +1,8 @@
 <?php
 /**
  * @package admin
- * @copyright Copyright 2003-2012 Zen Cart Development Team
- * @copyright Copyright Translation 2006-2012 Rune Rasmussen - http://www.syntaxerror.no
+ * @copyright Copyright 2003-2016 Zen Cart Development Team
+ * @copyright Copyright Translation 2006-2016 Rune Rasmussen - http://www.syntaxerror.no
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: store_manager.php 98 2012-03-01 15:19:32Z syntaxerror.no $
@@ -66,3 +66,4 @@ define('SUCCESS_DB_OPTIMIZE', 'Databaseoptimalisering - Antall tabeller som ble 
 
   define('TEXT_INFO_PURGE_DEBUG_LOG_FILES', '<strong>Rydd opp i loggfiler for feilsøking</strong><br /><strong>ADVARSEL: </strong>Zen Cart logger PHP-feilmeldinger for feilsøking, mange betalingsmoduler kan også være satt til å logge feilsøkingsdata, for diagnosering av kommunikasjonsproblemer.<br />Ved å bekrefte dette oppryddingsvalget vil <b>ALLE</b> feilogger assosiert med PHP-feil, PayPal, Authorize.net, og Linkpoint/FirstData-moduler bli <b>PERMANENT</b> slettet.');
   define('SUCCESS_CLEAN_DEBUG_FILES', 'Loggfiler for feilsøking ble slettet.');
+

@@ -1,8 +1,8 @@
 <?php
 /**
  * @package admin
- * @copyright Copyright 2003-2011 Zen Cart Development Team
- * @copyright Copyright Translation 2012 Rune Rasmussen - syntaxerror.no
+ * @copyright Copyright 2003-2016 Zen Cart Development Team
+ * @copyright Copyright Translation 2012-2016 Rune Rasmussen - syntaxerror.no
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: users.php 98 2012-03-01 15:19:32Z syntaxerror.no $
@@ -11,12 +11,12 @@
 define('HEADING_TITLE', 'Administratorer');
 
 define('IMAGE_ADD_USER', 'Legg til ny administrator');
-define('IMAGE_RESET_PWD', 'Tilbakestill passord');
 
 define('TEXT_ID', 'Id');
 define('TEXT_NAME', 'Brukernavn');
 define('TEXT_EMAIL', 'E-post');
 define('TEXT_PROFILE', 'Profil');
+define('TEXT_CHOOSE_PROFILE', 'Velg profil');
 define('TEXT_PASSWORD', 'Passord');
 define('TEXT_CONFIRM_PASSWORD', 'Bekreft passord');
 define('TEXT_NO_USERS_FOUND', 'Ingen administratorbrukere ble funnet.');

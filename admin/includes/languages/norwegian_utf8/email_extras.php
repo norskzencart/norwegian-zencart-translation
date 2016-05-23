@@ -1,12 +1,23 @@
 <?php
 /**
  * @package admin
- * @copyright Copyright 2003-2012 Zen Cart Development Team
- * @copyright Copyright Translation 2006-2012 Rune Rasmussen - http://www.syntaxerror.no
+ * @copyright Copyright 2003-2016 Zen Cart Development Team
+ * @copyright Copyright Translation 2006-2016 Rune Rasmussen - http://www.syntaxerror.no
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: email_extras.php 94 2012-02-16 23:24:23Z syntaxerror.no $
  */
+
+  define ('EMAIL_LOGO_FILENAME', 'header.jpg');  //-File is present in /email folder
+  define ('EMAIL_LOGO_WIDTH', '550');
+  define ('EMAIL_LOGO_HEIGHT', '110');
+  define ('EMAIL_LOGO_ALT_TITLE_TEXT', STORE_NAME);
+  
+  // -----
+  // If you want to include some extra information in each email's header information (like perhaps the store address and/or phone number),
+  // set this value to contain the full HTML content to be copied, e.g. '<div id="extra-stuff">Extra stuff for header</div>'.
+  //
+  define ('EMAIL_EXTRA_HEADER_INFO', '');
 
 // office use only
   define('OFFICE_FROM','Fra:');

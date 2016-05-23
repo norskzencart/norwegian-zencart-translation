@@ -1,9 +1,9 @@
 <?php
 /**
  * @package admin
- * @copyright Copyright 2003-2009 Zen Cart Development Team
+ * @copyright Copyright 2003-2016 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
- * @copyright Copyright Translation 2006 - 2013 Rune Rasmussen - syntaxerror.no
+ * @copyright Copyright Translation 2006 - 2016 Rune Rasmussen - syntaxerror.no
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: developers_tool_kit.php 93 2012-02-16 23:01:05Z syntaxerror.no $
  */
@@ -78,8 +78,18 @@
   define('TEXT_ALL_FILES_LOOKUP_CSS', 'Bare .css');
   define('TEXT_ALL_FILES_LOOKUP_HTMLTXT', '.html og .txt');
   define('TEXT_ALL_FILES_LOOKUP_JS', 'Bare .js');
+  define('TEXT_ALL_FILES_LOOKUP_ALL_TYPES', 'Alt');
 
   define('TEXT_CASE_SENSITIVE', 'Skill mellom små og store bokstaver?');
+  define('TEXT_CONTEXT_LINES', 'Kontekstlinjer: ');
+  define('TEXT_SEARCH_LOOKUP_PLACEHOLDER', 'Fyll inn søkeuttrykk eller mønster');
+  define('TEXT_SEARCH_KEY_PLACEHOLDER', 'Fyll inn nøkkelnavn eller frase for søk');
+  define('TEXT_SEARCH_PHRASE_PLACEHOLDER', 'Fyll inn søkefrase');
+  define('TEXT_BUTTON_SEARCH', 'Søk');
+  define('TEXT_BUTTON_SEARCH_ALT', 'Utfør søk');
+  define('TEXT_BUTTON_REGEX_SEARCH', 'Grep');
+  define('TEXT_BUTTON_REGEX_SEARCH_ALT', 'Søk ved bruk av Regex-mønster');
+  define('TEXT_ERROR_REGEX_FAIL', 'Feil: En feil oppstod under søket. Sjekk regex-mønster for skrivefeil dersom du utførte et regex/grep-søk.');
 
   //Search Configuration Keys
   define('SEARCH_CFG_KEYS_HEADING_TITLE','<strong>Søk i konfigurasjonsinnstillinger/-nøkler</strong>');
@@ -93,9 +103,9 @@
   define('SEARCH_CFG_KEYS_TABLE_EDIT','Endre');
   define('SEARCH_CFG_KEYS_NOT_FOUND_KEYS', 'Ingen konfigurasjonsnøkkel/-nøkler ble funnet.');
   define('SEARCH_CFG_KEYS_FOUND_KEYS', 'konfigurasjonsnøkkel/-nøkler ble funnet.');
-  define('SEARCH_CFG_KEYS_FORM_PLACEHOLDER', 'Angi ord som det skal søkes ettter i innstillinger.');
+  define('SEARCH_CFG_KEYS_FORM_PLACEHOLDER', 'Angi ord som det skal søkes ettter i konfigurasjonsinnstillinger.');
   define('SEARCH_CFG_KEYS_FORM_BUTTON_SEARCH_SORTED_BY_GROUP', 'Søk');
   define('SEARCH_CFG_KEYS_FORM_BUTTON_SEARCH_SORTED_BY_KEY', 'Søk (sortert etter nøkkel)');
-  define('SEARCH_CFG_KEYS_FORM_BUTTON_VIEW_ALL', 'Vis alle');
+  define('SEARCH_CFG_KEYS_FORM_BUTTON_VIEW_ALL', 'Vis alle (alle innstillinger)');
   define('SEARCH_CFG_KEYS_FORM_BUTTON_RESET', 'Tilbakestill');
-
+  define('TEXT_RESET_BUTTON_ALT', 'Tøm alle søkefelter, for å starte på nytt.');

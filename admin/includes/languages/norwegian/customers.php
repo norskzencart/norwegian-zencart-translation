@@ -1,9 +1,9 @@
 <?php
 /**
  * @package admin
- * @copyright Copyright 2003-2007 Zen Cart Development Team
+ * @copyright Copyright 2003-2016 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
- * @Norwegian translation by Rune Rasmussen - 2006 - http://www.syntaxerror.no
+ * @copyright Copyright Translation 2006-2016 Rune Rasmussen - http://www.syntaxerror.no
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: customers.php 84 2012-02-16 17:42:27Z syntaxerror.no $
  */
@@ -41,6 +41,17 @@ define('ENTRY_NONE', 'Ingen');
 
 define('TABLE_HEADING_COMPANY','Firma');
 
+define('TEXT_INFO_HEADING_RESET_CUSTOMER_PASSWORD', 'Endre kundens passord');
+define('TEXT_PWDRESET_INTRO', 'Fyll inn og bekreft et nytt passord, for å endre passord for denne kunden. Det nye passordet må tilfredstille normale passordregler for kundekontoer.');
+define('TEXT_CUST_NEW_PASSWORD', 'Nytt passord:');
+define('TEXT_CUST_CONFIRM_PASSWORD', 'Bekreft passord:');
+define('ERROR_PWD_TOO_SHORT', 'Feil: Passord er kortere enn minimumskrav som er satt for denne butikken.');
+define('SUCCESS_PASSWORD_UPDATED', 'Passord ble oppdatert.');
+
+define('EMAIL_CUSTOMER_PWD_CHANGE_MESSAGE', 'Deres passord har blitt oppdatert av butikkens administrator. Nytt passord er: ');
+define('EMAIL_CUSTOMER_PWD_CHANGE_SUBJECT', 'Passord endret');
+define('EMAIL_CUSTOMER_PWD_CHANGE_MESSAGE_FOR_ADMIN', 'Du har endret passord for en kunde: ' . "\n" . '%s' . "\n\n" . 'Administrator-id: %s');
+
 define('CUSTOMERS_AUTHORIZATION', 'Kundestatus');
 define('CUSTOMERS_AUTHORIZATION_0', 'Godkjent');
 define('CUSTOMERS_AUTHORIZATION_1', 'Venter godkjenning - må bli godkjent for å navigere');
@@ -57,3 +68,4 @@ define('ADDRESS_BOOK_TITLE', 'Adressebok-oppføringer');
 define('PRIMARY_ADDRESS', '(forvalgt adresse)');
 define('TEXT_MAXIMUM_ENTRIES', '<span class="coming"><strong>Merk:</strong></span> Maksimum %s adressebok-oppføringer er tillatt.');
 define('TEXT_INFO_ADDRESS_BOOK_COUNT', ' | 1 av  ');
+

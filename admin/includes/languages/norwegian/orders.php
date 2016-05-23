@@ -1,17 +1,21 @@
 <?php
 /**
  * @package admin
- * @copyright Copyright 2003-2007 Zen Cart Development Team
+ * @copyright Copyright 2003-2016 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
- * @Norwegian translation by Rune Rasmussen - 2006 - http://www.syntaxerror.no
+ * @copyright Copyright Translation 2006-2016 Rune Rasmussen - http://www.syntaxerror.no
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: orders.php 107 2012-04-15 12:04:10Z syntaxerror.no $
  */
 
 define('HEADING_TITLE', 'Ordrer');
+define('HEADING_TITLE_DETAILS', 'Ordredetaljer');
 define('HEADING_TITLE_SEARCH', 'Ordrenummer:');
 define('HEADING_TITLE_STATUS', 'Status:');
 define('HEADING_TITLE_SEARCH_DETAIL_ORDERS_PRODUCTS', 'Søk etter produktnavn eller <strong>ID:XX</strong> eller modell ');
+define('HEADING_TITLE_SEARCH_ALL','Søk: ');
+define('HEADING_TITLE_SEARCH_PRODUCTS','Produktsøk: ');
+define('TEXT_RESET_FILTER', 'Fjern søkefilter');
 define('TEXT_INFO_SEARCH_DETAIL_FILTER_ORDERS_PRODUCTS', 'Søkefilter: ');
 define('TABLE_HEADING_PAYMENT_METHOD', 'Betaling<br />Sending');
 define('TABLE_HEADING_ORDERS_ID','Nr.');
@@ -39,11 +43,12 @@ define('TABLE_HEADING_CUSTOMER_NOTIFIED', 'Kunde varslet');
 define('TABLE_HEADING_DATE_ADDED', 'Lagt til');
 
 define('ENTRY_CUSTOMER', 'Kunde:');
+define('ENTRY_CUSTOMER_ADDRESS', 'Kundeadresse:<br><i class="fa fa-2x fa-user"></i>');
 define('ENTRY_SOLD_TO', 'Solgt til:');
 define('ENTRY_DELIVERY_TO', 'Levert til:');
 define('ENTRY_SHIP_TO', 'Sendes til:');
-define('ENTRY_SHIPPING_ADDRESS', 'Sendingsadresse:');
-define('ENTRY_BILLING_ADDRESS', 'Fakturaadresse:');
+define('ENTRY_SHIPPING_ADDRESS', 'Sendingsadresse:<br><i class="fa fa-2x fa-truck"></i>');
+define('ENTRY_BILLING_ADDRESS', 'Fakturaadresse:<br><i class="fa fa-2x fa-credit-card"></i>');
 define('ENTRY_PAYMENT_METHOD', 'Betalingsmetode:');
 define('ENTRY_CREDIT_CARD_TYPE', 'Kredtittkorttype:');
 define('ENTRY_CREDIT_CARD_OWNER', 'Kredittkorteier:');
@@ -71,7 +76,6 @@ define('TEXT_PAID', 'Betalt');
 define('TEXT_UNPAID', 'Ubetalt');
 
 define('TEXT_ALL_ORDERS', 'Alle ordrer');
-define('TEXT_NO_ORDER_HISTORY', 'Ingen ordrehistorie tilgjengelig');
 
 define('EMAIL_SEPARATOR', '------------------------------------------------------');
 define('EMAIL_TEXT_SUBJECT', 'Ordreoppdatering');
@@ -129,3 +133,11 @@ define('SELECT_ORDER_LIST', 'Gå til ordre: ');
 define('HEADING_TITLE_ORDER_DETAILS', 'Ordrenummer: ');
 define('BUTTON_TO_LIST', 'Ordreliste');
 //End Ty Package Tracker
+
+define('TEXT_CUSTOMER_LOOKUP', '<i class="fa fa-search"></i> Lookup Customer');
+
+define('TEXT_INVALID_ORDER_STATUS', '<span class="alert">(Invalid Order Status)</span>');
+
+define('BUTTON_TO_LIST', 'Order List');
+define('SELECT_ORDER_LIST', 'Jump to Order:');
+

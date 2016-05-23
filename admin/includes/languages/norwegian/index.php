@@ -1,9 +1,9 @@
 <?php
 /**
  * @package admin
- * @copyright Copyright 2003-2013 Zen Cart Development Team
+ * @copyright Copyright 2003-2016 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
- * @copyright Copyright Translation 2006 - 2013 Rune Rasmussen - syntaxerror.no
+ * @copyright Copyright Translation 2006 - 2016 Rune Rasmussen - syntaxerror.no
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version GIT: $Id: Author: Ian Wilson  Sat Aug 10 18:43:55 2013 +0100 Modified in v1.5.2 $
  */
@@ -88,3 +88,13 @@ define('TEXT_FORM_LABEL_STORE_OWNER_EMAIL', 'Butikkens e-post');
 define('TEXT_FORM_LABEL_STORE_COUNTRY', 'Butikkland');
 define('TEXT_FORM_LABEL_STORE_ZONE', 'Butikksone');
 define('TEXT_FORM_LABEL_STORE_ADDRESS', 'Butikkadresse');
+
+define('TEXT_STORE_NAME', 'Butikkens navn');
+define('TEXT_STORE_OWNER', 'Butikkens eier');
+define('TEXT_STORE_OWNER_EMAIL', 'Butikkeiers e-postadresse');
+define('TEXT_STORE_COUNTRY', 'Butikkens land');
+define('TEXT_STORE_ZONE', 'Butikkens fylke');
+define('TEXT_STORE_ADDRESS', 'Butikkens adresse');
+define('HEADING_TITLE_WIZARD', 'Installasjonsveiviser');
+define('TEXT_STORE_DETAILS', 'Fyll inn opplysninger for butikken deres. Alle felter er påkrevd.');
+

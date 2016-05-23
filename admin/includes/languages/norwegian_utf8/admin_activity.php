@@ -1,11 +1,11 @@
 <?php
 /**
  * @package admin
- * @copyright Copyright 2003-2014 Zen Cart Development Team
- * @copyright Copyright Translation 2014-2015 Rune Rasmussen - http://www.syntaxerror.no
+ * @copyright Copyright 2003-2016 Zen Cart Development Team
+ * @copyright Copyright Translation 2014-2016 Rune Rasmussen - http://www.syntaxerror.no
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
- * @version $Id: admin_activity.php drbyte Modified in v1.5.4 $
+ * @version $Id: admin_activity.php drbyte Modified in v1.5.5 $
  */
 
 define('HEADING_TITLE', 'Aktivitetsloggbehandling');
@@ -40,11 +40,13 @@ define('TEXT_EXPORTFILTER3', 'ADVARSEL - Aktivitet som bør gjennomgås daglig')
 define('TEXT_EXPORTFILTER4', 'Både MERKNAD og ADVARSEL (vanlig kombinasjon for gjennomgang).');
 
 define('TEXT_INTERPRETING_LOG_DATA', '<p><strong>Interpretation of the log data</strong><ul>
-<li><strong>Severity</strong> - The standards for logging generally describe severities as follows:<ul>
-<li><strong>INFO</strong> refers to general activity. This may or may not contain remarkable details.</li>
-<li><strong>NOTICE</strong> refers to activity which indicates higher privilege was used, and may include things like creating new admin users or adding new payment modules. It also highlights when any data submitted on the web page includes potentially risky content such as script tags or embedded iframes, where malicious content is being added to your products/categories/pages by unhappy employees or an intruder on your site. These should be reviewed regularly for any anomalies such as unauthorized activity.</li>
-<li><strong>WARNING</strong> is assigned to CRITICAL things such as removal of payment modules or deletion of admin users. These are activities which might suggest pending trouble if not caught quickly. These should be reviewed very frequently; recommended daily.</li>
-</ul>
+<li><strong>Severity</strong> - The standards for logging generally describe severities as follows:
+  <ul>
+  <li><strong>INFO</strong> refers to general activity. This may or may not contain remarkable details.</li>
+  <li><strong>NOTICE</strong> refers to activity which indicates higher privilege was used, and may include things like creating new admin users or adding new payment modules. It also highlights when any data submitted on the web page includes potentially risky content such as script tags or embedded iframes, where malicious content is being added to your products/categories/pages by unhappy employees or an intruder on your site. These should be reviewed regularly for any anomalies such as unauthorized activity.</li>
+  <li><strong>WARNING</strong> is assigned to CRITICAL things such as removal of payment modules or deletion of admin users. These are activities which might suggest pending trouble if not caught quickly. These should be reviewed very frequently; recommended daily.</li>
+  </ul>
+</li>
 <li><strong>admin_user</strong> - This will show the admin user ID number followed by their admin username. If not logged in, it will show 0.</li>
 <li><strong>page_accessed</strong> - This will indicate the name of the page visited, thus giving hints to the kind of activity taking place.</li>
 <li><strong>parameters</strong> - This is the rest of the URI of the page visited, and gives further indication of the kind of activity being attempted by the visitor.</li>
