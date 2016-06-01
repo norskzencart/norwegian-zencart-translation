@@ -346,7 +346,7 @@ if (!function_exists('zen_date_raw')) {
 
   define('ENTRY_COMPANY', 'Firmanavn:');
   define('ENTRY_COMPANY_ERROR', 'Du må fylle inn et firmanavn.');
-  define('ENTRY_COMPANY_TEXT', '<span style="color:green;">(Fylles kun ut om firma)</span>');
+  define('ENTRY_COMPANY_TEXT', 'Fylles kun ut om firma');
   define('ENTRY_GENDER', 'Tittel:');
   define('ENTRY_GENDER_ERROR', 'Du må velge en tittel.');
   define('ENTRY_GENDER_TEXT', '*');
