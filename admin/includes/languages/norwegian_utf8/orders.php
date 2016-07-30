@@ -124,12 +124,18 @@ define('TABLE_HEADING_CUSTOMER_COMMENTS', 'Kunde-<br />kommentarer');
 define('TEXT_COMMENTS_YES', 'Kundekommentarer - Ja');
 define('TEXT_COMMENTS_NO', 'Kundekommentarer - Nei');
 
+define('TEXT_CUSTOMER_LOOKUP', '<i class="fa fa-search"></i> Gå til kundekort');
+
+define('TEXT_INVALID_ORDER_STATUS', '<span class="alert">(Ugyldig ordrestatus)</span>');
+
+define('BUTTON_TO_LIST', 'Ordreliste');
+define('SELECT_ORDER_LIST', 'Gå til ordre: ');
+
 //Begin Ty Package Tracker
 define('TABLE_HEADING_TRACKING_ID', 'Sporingsnummer');
 define('TABLE_HEADING_CARRIER_NAME', 'Transportør');
 define('ENTRY_ADD_TRACK', 'Legg til sporingsnummer');
 define('IMAGE_TRACK', 'Legg til sporingsnummer');
-define('SELECT_ORDER_LIST', 'Gå til ordre: ');
 define('HEADING_TITLE_ORDER_DETAILS', 'Ordrenummer: ');
-define('BUTTON_TO_LIST', 'Ordreliste');
 //End Ty Package Tracker
+
