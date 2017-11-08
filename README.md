@@ -23,7 +23,7 @@ Dette er bare en liten del av alt som må gjøres i forhold til å drive netthan
     Sort Order: 0
     Kryss av for 'Set as default'
 ```
-  Merk! Dersom man ønsker å bruke UTF-8 fyller man inn 'Code: nb' og 'Directory: norwegian_utf8'.
+  Merk! Latin1/ISO-8859 støttes ikke lengre, på tide å konvertere til UTF-8 også for gamle butikker.
   
 * Klikk på 'Insert'-knappen.
 * Du kan nå velge 'Norsk' fra nedtrekklisten oppe til venstre under logo.
