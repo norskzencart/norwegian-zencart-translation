@@ -14,4 +14,3 @@ define('TEXT_INVALID_GV', TEXT_GV_NAME . '-nummeret kan være feil eller har all
 define('TEXT_VALID_GV', 'Gratulerer, du har løst inn et gavekort pålydende %s.');
 
 define('ERROR_GV_CREATE_ACCOUNT', 'For å kunne løse inn et gavekort må du først opprette en kundekonto.');
-

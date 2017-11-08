@@ -606,6 +606,7 @@ define('ERROR_DESTINATION_DOES_NOT_EXIST', 'Feil: Mål eksisterer ikke %s');
 define('ERROR_DESTINATION_NOT_WRITEABLE', 'Feil: Mål er ikke skrivbar %s');
 define('ERROR_FILE_NOT_SAVED', 'Feil: Fil ble ikke lagret.');
 define('ERROR_FILETYPE_NOT_ALLOWED', 'Feil: Filtype ikke tillat  %s');
+define('ERROR_FILE_TOO_BIG', 'Advarsel: Filen er større enn tillatt. Se innstillinger for bilder.');
 define('SUCCESS_FILE_SAVED_SUCCESSFULLY', 'Vellykket: Fil ble vellykket lagret %s');
 define('WARNING_NO_FILE_UPLOADED', 'Advarsel: Ingen fil ble lastet opp.');
 define('WARNING_FILE_UPLOADS_DISABLED', 'Advarsel: Filopplasting er deaktivert i konfigurasjonsfilen php.ini');
