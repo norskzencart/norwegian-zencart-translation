@@ -121,7 +121,7 @@ Pakken inneholder norske språkfiler for både administrasjon (admin) og butikk 
 Dersom du er fornøyd med oversettelsen, og tiden denne sparer for deg, vil du kanskje takke for jobben og bidra til at vi har mulighet for å holde pakken oppdatert regelmessig?
 Dette kan gjøres via <a href="http://oversettelser.syntaxerror.no/bidra.html" target="_blank">prosjektsidene våre</a>.
 
-Så langt, etter mer enn 8 år og over 20.000 nedlastinger, er det mottatt ca. <b>2530 NOK</b>. Takk til de som har gitt sin støtte, det settes stor pris på både små og store bidrag.
+Så langt, etter mer enn 14 år og mye over 20.000 nedlastinger, er det mottatt ca. <b>2530 NOK</b>. Takk til de som har gitt sin støtte, det settes stor pris på både små og store bidrag.
 
 <a href="http://oversettelser.syntaxerror.no/bidra.html" target="_blank"><img src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" alt="Støtt prosjektet" /></a>
 
