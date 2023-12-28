@@ -4,7 +4,6 @@ $define = [
     'MODULE_PAYMENT_PAYPALWPP_TEXT_ADMIN_TITLE_PRO20' => 'PayPal Express Checkout (Pro 2.0 Payflow Edition) (UK)',
     'MODULE_PAYMENT_PAYPALWPP_TEXT_ADMIN_TITLE_PF_EC' => 'PayPal Payflow Pro - Gateway',
     'MODULE_PAYMENT_PAYPALWPP_TEXT_ADMIN_TITLE_PF_GATEWAY' => 'PayPal Express Checkout via Payflow Pro',
-    'MODULE_PAYMENT_PAYPALWPP_TEXT_ADMIN_DESCRIPTION' => '<strong>PayPal Express Checkout</strong>%s<br />'.(substr(MODULE_PAYMENT_PAYPALWPP_MODULE_MODE,0,7,
     'MODULE_PAYMENT_PAYPALWPP_TEXT_DESCRIPTION' => '<strong>PayPal</strong>',
     'MODULE_PAYMENT_PAYPALWPP_TEXT_TITLE' => 'Credit Card',
     'MODULE_PAYMENT_PAYPALWPP_EC_TEXT_TITLE' => 'PayPal',
@@ -26,17 +25,18 @@ $define = [
     'MODULE_PAYMENT_PAYPALWPP_TEXT_DECLINED' => 'Your credit card was declined. Please try another card or contact your bank for more information.',
     'MODULE_PAYMENT_PAYPALWPP_INVALID_RESPONSE' => 'We were not able to process your order. Please try again, select an alternate payment method, or contact the store owner for assistance.',
     'MODULE_PAYMENT_PAYPALWPP_TEXT_GEN_ERROR' => 'An error occurred when we tried to contact the payment processor. Please try again, select an alternate payment method, or contact the store owner for assistance.',
-    'MODULE_PAYMENT_PAYPALWPP_TEXT_EMAIL_ERROR_MESSAGE' => 'Dear store owner,'."\n".'An error occurred when attempting to initiate a PayPal Express Checkout transaction. As a courtesy, only the error "number" was shown to your customer.  The details of the error are shown below.'."\n\n",
+    'MODULE_PAYMENT_PAYPALWPP_TEXT_EMAIL_ERROR_MESSAGE' => 'Dear store owner,' . "\n" . 'An error occurred when attempting to initiate a PayPal Express Checkout transaction. As a courtesy, only the error "number" was shown to your customer.  The details of the error are shown below.' . "\n\n",
     'MODULE_PAYMENT_PAYPALWPP_TEXT_EMAIL_ERROR_SUBJECT' => 'ALERT: PayPal Express Checkout Error',
     'MODULE_PAYMENT_PAYPALWPP_TEXT_ADDR_ERROR' => 'The address information you entered does not appear to be valid or cannot be matched. Please select or add a different address and try again.',
     'MODULE_PAYMENT_PAYPALWPP_TEXT_CONFIRMEDADDR_ERROR' => 'The address you selected at PayPal is not a Confirmed address. Please return to PayPal and select or add a confirmed address and try again.',
     'MODULE_PAYMENT_PAYPALWPP_TEXT_INSUFFICIENT_FUNDS_ERROR' => 'PayPal was unable to successfully fund this transaction. Please choose another payment option or review funding options in your PayPal account before proceeding.',
     'MODULE_PAYMENT_PAYPALWPP_TEXT_PAYPAL_DECLINED' => 'Sorry. PayPal has declined the transaction and advised us to tell you to contact PayPal Customer Service for more information. To complete your purchase, please select an alternate payment method.',
     'MODULE_PAYMENT_PAYPALWPP_TEXT_ERROR' => 'An error occurred when we tried to process your credit card. Please try again, select an alternate payment method, or contact the store owner for assistance.',
+    'MODULE_PAYMENT_PAYPALWPP_FUNDING_ERROR' => 'Funding source problem; please go to Paypal.com and make payment directly to ' . STORE_OWNER_EMAIL_ADDRESS,
     'MODULE_PAYMENT_PAYPALWPP_TEXT_BAD_CARD' => 'We apologize for the inconvenience, but the credit card you entered is not one that we accept. Please use a different credit card.',
     'MODULE_PAYMENT_PAYPALWPP_TEXT_BAD_LOGIN' => 'There was a problem validating your account. Please try again.',
-    'MODULE_PAYMENT_PAYPALWPP_TEXT_JS_CC_OWNER' => '* The cardholder\'s name must be at least '.CC_OWNER_MIN_LENGTH.' characters.\n',
-    'MODULE_PAYMENT_PAYPALWPP_TEXT_JS_CC_NUMBER' => '* The credit card number must be at least '.CC_NUMBER_MIN_LENGTH.' characters.\n',
+    'MODULE_PAYMENT_PAYPALWPP_TEXT_JS_CC_OWNER' => '* The cardholder\'s name must be at least ' . CC_OWNER_MIN_LENGTH . ' characters.\n',
+    'MODULE_PAYMENT_PAYPALWPP_TEXT_JS_CC_NUMBER' => '* The credit card number must be at least ' . CC_NUMBER_MIN_LENGTH . ' characters.\n',
     'MODULE_PAYMENT_PAYPALWPP_ERROR_AVS_FAILURE_TEXT' => 'ALERT: Address Verification Failure. ',
     'MODULE_PAYMENT_PAYPALWPP_ERROR_CVV_FAILURE_TEXT' => 'ALERT: Card CVV Code Verification Failure. ',
     'MODULE_PAYMENT_PAYPALWPP_ERROR_AVSCVV_PROBLEM_TEXT' => ' Order is on hold pending review by Store Owner.',
@@ -57,10 +57,6 @@ $define = [
     'MODULE_PAYMENT_PAYPALWPP_TEXT_REFUND_FULL_CONFIRM_ERROR' => 'You requested a full refund but did not check the Confirm box to verify your intent.',
     'MODULE_PAYMENT_PAYPALWPP_TEXT_INVALID_AUTH_AMOUNT' => 'You requested an authorization but did not specify an amount.',
     'MODULE_PAYMENT_PAYPALWPP_TEXT_INVALID_CAPTURE_AMOUNT' => 'You requested a capture but did not specify an amount.',
-    'MODULE_PAYMENT_PAYPALWPP_TEXT_VOID_CONFIRM_CHECK' => 'Confirm',
-    'MODULE_PAYMENT_PAYPALWPP_TEXT_VOID_CONFIRM_ERROR' => 'You requested to void a transaction but did not check the Confirm box to verify your intent.',
-    'MODULE_PAYMENT_PAYPALWPP_TEXT_AUTH_FULL_CONFIRM_CHECK' => 'Confirm',
-    'MODULE_PAYMENT_PAYPALWPP_TEXT_AUTH_CONFIRM_ERROR' => 'You requested an authorization but did not check the Confirm box to verify your intent.',
     'MODULE_PAYMENT_PAYPALWPP_TEXT_CAPTURE_FULL_CONFIRM_ERROR' => 'You requested funds-Capture but did not check the Confirm box to verify your intent.',
     'MODULE_PAYMENT_PAYPALWPP_TEXT_REFUND_INITIATED' => 'PayPal refund for %s initiated. Transaction ID: %s. Refresh the screen to see confirmation details updated in the Order Status History/Comments section.',
     'MODULE_PAYMENT_PAYPALWPP_TEXT_AUTH_INITIATED' => 'PayPal Authorization for %s initiated. Refresh the screen to see confirmation details updated in the Order Status History/Comments section.',
@@ -74,6 +70,10 @@ $define = [
     'MODULE_PAYMENT_PAYPALWPP_EC_BUTTON_SM_IMG' => 'https://www.paypalobjects.com/en_US/i/btn/btn_xpressCheckoutsm.gif',
     'MODULE_PAYMENT_PAYPALWPP_MARK_BUTTON_TXT' => '',
     'MODULE_PAYMENT_PAYPALEC_MARK_BUTTON_IMG' => 'https://www.paypalobjects.com/en_US/i/btn/btn1_for_hub.gif',
+    'MODULE_PAYMENT_PAYPALWPP_TEXT_VOID_CONFIRM_CHECK' => 'Confirm',
+    'MODULE_PAYMENT_PAYPALWPP_TEXT_VOID_CONFIRM_ERROR' => 'You requested to void a transaction but did not check the Confirm box to verify your intent.',
+    'MODULE_PAYMENT_PAYPALWPP_TEXT_AUTH_FULL_CONFIRM_CHECK' => 'Confirm',
+    'MODULE_PAYMENT_PAYPALWPP_TEXT_AUTH_CONFIRM_ERROR' => 'You requested an authorization but did not check the Confirm box to verify your intent.',
     'MODULE_PAYMENT_PAYPAL_ENTRY_FIRST_NAME' => 'First Name:',
     'MODULE_PAYMENT_PAYPAL_ENTRY_LAST_NAME' => 'Last Name:',
     'MODULE_PAYMENT_PAYPAL_ENTRY_BUSINESS_NAME' => 'Business Name:',
@@ -105,10 +105,10 @@ $define = [
     'MODULE_PAYMENT_PAYPAL_ENTRY_REFUND_FULL' => 'If you wish to refund this order in its entirety, click here:',
     'MODULE_PAYMENT_PAYPAL_ENTRY_REFUND_BUTTON_TEXT_FULL' => 'Do Full Refund',
     'MODULE_PAYMENT_PAYPAL_ENTRY_REFUND_BUTTON_TEXT_PARTIAL' => 'Do Partial Refund',
-    'MODULE_PAYMENT_PAYPAL_ENTRY_REFUND_TEXT_FULL_OR' => '<br />... or enter the partial ',
+    'MODULE_PAYMENT_PAYPAL_ENTRY_REFUND_TEXT_FULL_OR' => '<br>... or enter the partial ',
     'MODULE_PAYMENT_PAYPAL_ENTRY_REFUND_PAYFLOW_TEXT' => 'Enter the ',
     'MODULE_PAYMENT_PAYPAL_ENTRY_REFUND_PARTIAL_TEXT' => 'refund amount here and click on Partial Refund',
-    'MODULE_PAYMENT_PAYPAL_ENTRY_REFUND_SUFFIX' => '*A Full refund may not be issued after a Partial refund has been applied.<br />*Multiple Partial refunds are permitted up to the remaining unrefunded balance.',
+    'MODULE_PAYMENT_PAYPAL_ENTRY_REFUND_SUFFIX' => '*A Full refund may not be issued after a Partial refund has been applied.<br>*Multiple Partial refunds are permitted up to the remaining unrefunded balance.',
     'MODULE_PAYMENT_PAYPAL_ENTRY_REFUND_TEXT_COMMENTS' => '<strong>Note to display to customer:</strong>',
     'MODULE_PAYMENT_PAYPAL_ENTRY_REFUND_DEFAULT_MESSAGE' => 'Refunded by store administrator.',
     'MODULE_PAYMENT_PAYPALWPP_TEXT_REFUND_FULL_CONFIRM_CHECK' => 'Confirm: ',
@@ -119,7 +119,7 @@ $define = [
     'MODULE_PAYMENT_PAYPAL_ENTRY_AUTH_BUTTON_TEXT_PARTIAL' => 'Do Authorization',
     'MODULE_PAYMENT_PAYPAL_ENTRY_AUTH_SUFFIX' => '',
     'MODULE_PAYMENT_PAYPAL_ENTRY_CAPTURE_TITLE' => '<strong>Capturing Authorizations</strong>',
-    'MODULE_PAYMENT_PAYPAL_ENTRY_CAPTURE_FULL' => 'If you wish to capture all or part of the outstanding authorized amounts for this order, enter the Capture Amount and select whether this is the final capture for this order.  Check the confirm box before submitting your Capture request.<br />',
+    'MODULE_PAYMENT_PAYPAL_ENTRY_CAPTURE_FULL' => 'If you wish to capture all or part of the outstanding authorized amounts for this order, enter the Capture Amount and select whether this is the final capture for this order.  Check the confirm box before submitting your Capture request.<br>',
     'MODULE_PAYMENT_PAYPAL_ENTRY_CAPTURE_BUTTON_TEXT_FULL' => 'Do Capture',
     'MODULE_PAYMENT_PAYPAL_ENTRY_CAPTURE_AMOUNT_TEXT' => 'Amount to Capture:',
     'MODULE_PAYMENT_PAYPAL_ENTRY_CAPTURE_FINAL_TEXT' => 'Is this the final capture?',
@@ -147,8 +147,19 @@ $define = [
     'MODULES_PAYMENT_PAYPALWPP_LINEITEM_TEXT_DISCOUNTS_LONG' => 'Credits applied, including discount coupons, gift certificates, etc',
     'MODULES_PAYMENT_PAYPALDP_TEXT_EMAIL_FMF_SUBJECT' => 'Payment in Fraud Review Status: ',
     'MODULES_PAYMENT_PAYPALDP_TEXT_EMAIL_FMF_INTRO' => 'This is an automated notification to advise you that PayPal flagged the payment for a new order as Requiring Payment Review by their Fraud team. Normally the review is completed within 36 hours. It is STRONGLY ADVISED that you DO NOT SHIP the order until payment review is completed. You can see the latest review status of the order by logging into your PayPal account and reviewing recent transactions.',
-    'MODULES_PAYMENT_PAYPALWPP_TEXT_BLANK_ADDRESS' => 'PROBLEM: We&#39;re sorry. PayPal has unexpectedly returned a blank address. <br />In order to complete your purchase, please provide your address by clicking the &quot;Sign Up&quot; button below to create an account in our store. Then you may select PayPal again when you continue with checkout. We apologize for the inconvenience. If you have any trouble with checkout, please click the Contact Us link to explain the details to us so we can help you with your purchase and prevent the problem in the future. Thanks.',
+    'MODULES_PAYMENT_PAYPALWPP_TEXT_BLANK_ADDRESS' => 'PROBLEM: We&#39;re sorry. PayPal has unexpectedly returned a blank address. <br>In order to complete your purchase, please provide your address by clicking the &quot;Sign Up&quot; button below to create an account in our store. Then you may select PayPal again when you continue with checkout. We apologize for the inconvenience. If you have any trouble with checkout, please click the Contact Us link to explain the details to us so we can help you with your purchase and prevent the problem in the future. Thanks.',
     'MODULES_PAYMENT_PAYPALWPP_AGGREGATE_CART_CONTENTS' => 'All the items in your shopping basket (see details in the store and on your store receipt).',
 ];
+
+if (IS_ADMIN_FLAG === true) {
+    if (!isset($define['MODULE_PAYMENT_PAYPALWPP_MODULE_MODE'])) {
+        $define['MODULE_PAYMENT_PAYPALWPP_MODULE_MODE'] = 'undefined';
+    }
+    $define['MODULE_PAYMENT_PAYPALWPP_TEXT_ADMIN_DESCRIPTION'] = '<strong>PayPal Express Checkout</strong>%s<br>' . (substr($define['MODULE_PAYMENT_PAYPALWPP_MODULE_MODE'], 0, 7) == 'Payflow' ? '<a href="https://manager.paypal.com/loginPage.do?partner=ZenCart" rel="noreferrer noopener" target="_blank">Manage your PayPal account.</a>' : '<a href="https://www.paypal.com" rel="noopener" target="_blank">Manage your PayPal account.</a>') . '<br><br><font color="green">Configuration Instructions:</font><br><span class="alert">1. </span><a href="https://www.zen-cart.com/partners/paypal-ec" rel="noopener" target="_blank">Sign up for your PayPal account - click here.</a><br>' .
+        (defined('MODULE_PAYMENT_PAYPALWPP_STATUS') ? '' : '... and click "install" above to enable PayPal Express Checkout support.<br><a href="https://www.zen-cart.com/getpaypal" rel="noopener" target="_blank">For additional detailed help, see this FAQ article</a><br>') .
+        ($define['MODULE_PAYMENT_PAYPALWPP_MODULE_MODE'] == 'PayPal' && (!isset(define['MODULE_PAYMENT_PAYPALWPP_APISIGNATURE']) || $define['MODULE_PAYMENT_PAYPALWPP_APISIGNATURE'] === '') ? '<br><span class="alert">2. </span><strong>API credentials</strong> from the API Credentials option in your PayPal Profile Settings area. (Click <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_get-api-signature&generic-flow=true" rel="noopener" target="_blank">here for API credentials</a>.) <br>This module uses the <strong>API Signature</strong> option -- you will need the username, password and signature to enter in the fields below.' : (substr($define['MODULE_PAYMENT_PAYPALWPP_MODULE_MODE'], 0, 7) == 'Payflow' && (!isset($define['MODULE_PAYMENT_PAYPALWPP_PFUSER']) || $define['MODULE_PAYMENT_PAYPALWPP_PFUSER'] == '') ? '<span class="alert">2. </span><strong>PAYFLOW credentials</strong> This module needs your <strong>PAYFLOW Partner+Vendor+User+Password settings</strong> entered in the 4 fields below. These will be used to communicate with the Payflow system and authorize transactions to your account.' : '<span class="alert">2. </span>Ensure you have entered the appropriate security data for username/pwd etc, below.')) .
+        ($define['MODULE_PAYMENT_PAYPALWPP_MODULE_MODE'] == 'PayPal' ? '<br><br><span class="alert">3. </span>In your PayPal account, enable <strong>Instant Payment Notification</strong>:<br>under "Profile", select <em>Instant Payment Notification Preferences</em><ul style="margin-top: 0.5em;"><li>click the checkbox to enable IPN</li><li>if there is not already a URL specified, set the URL to:<br><nobr><pre>' . str_replace('index.php?main_page=index', 'ipn_main_handler.php', zen_catalog_href_link(FILENAME_DEFAULT)) . '</pre></nobr></li></ul>' : '') .
+        '<font color="green"><hr><strong>Requirements:</strong></font><br><hr>*<strong>CURL</strong> is used for outbound communication with the gateway over ports 80 and 443, so must be active on your hosting server and able to use SSL.<br><hr>';
+}
 
 return $define;
