@@ -1,0 +1,9 @@
+<?php
+$define = [
+    'MODULE_SHIPPING_STOREPICKUP_TEXT_TITLE' => 'Hentes i butikk',
+    'MODULE_SHIPPING_STOREPICKUP_TEXT_DESCRIPTION' => 'Hentes av kunde hos '.STORE_NAME,
+    'MODULE_SHIPPING_STOREPICKUP_TEXT_WAY' => 'Kom innom',
+    'MODULE_SHIPPING_STOREPICKUP_MULTIPLE_WAYS' => "",
+];
+
+return $define;

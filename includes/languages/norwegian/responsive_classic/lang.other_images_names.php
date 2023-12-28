@@ -1,0 +1,31 @@
+<?php
+$define = [
+    'OTHER_IMAGE_BLACK_SEPARATOR' => 'pixel_black.gif',
+    'OTHER_IMAGE_BOX_NOTIFY_REMOVE' => 'box_products_notifications_remove.gif',
+    'OTHER_IMAGE_BOX_NOTIFY_YES' => 'box_products_notifications.gif',
+    'OTHER_IMAGE_BOX_WRITE_REVIEW' => 'box_write_review.gif',
+    'OTHER_IMAGE_CALL_FOR_PRICE' => 'call_for_prices.png',
+    'OTHER_IMAGE_DOWN_FOR_MAINTENANCE' => 'down_for_maintenance.png',
+    'OTHER_IMAGE_PRICE_IS_FREE' => 'free.png',
+    'OTHER_IMAGE_TRANPARENT' => 'pixel_trans.gif',
+    'OTHER_IMAGE_CUSTOMERS_AUTHORIZATION' => 'customer_authorization.gif',
+    'OTHER_IMAGE_REVIEWS_RATING_STARS_FIVE' => 'stars_5_small.png',
+    'OTHER_IMAGE_REVIEWS_RATING_STARS_FOUR' => 'stars_4_small.png',
+    'OTHER_IMAGE_REVIEWS_RATING_STARS_THREE' => 'stars_3_small.png',
+    'OTHER_IMAGE_REVIEWS_RATING_STARS_TWO' => 'stars_2_small.png',
+    'OTHER_IMAGE_REVIEWS_RATING_STARS_ONE' => 'stars_1_small.png',
+    'OTHER_BOX_NOTIFY_REMOVE_ALT' => 'Fjern denne produktvarslingen.',
+    'OTHER_BOX_NOTIFY_YES_ALT' => 'Varsle meg om oppdateringer på dette produktet.',
+    'OTHER_BOX_WRITE_REVIEW_ALT' => 'Skriv en omtale for dette produktet.',
+    'OTHER_CALL_FOR_PRICE_ALT' => 'Vennligst ring oss for oppdatert pris.',
+    'OTHER_DOWN_FOR_MAINTENANCE_ALT' => 'Siden er for øyeblikket nede for vedlikehold. Velkommen tilbake litt senere.',
+    'OTHER_TRANPARENT_ALT' => '',
+    'OTHER_IMAGE_CUSTOMERS_AUTHORIZATION_ALT' => 'VENTER PÅ GODKJENNING AV KUNDEKONTO ...',
+    'OTHER_REVIEWS_RATING_STARS_FIVE_ALT' => 'Fem stjerner',
+    'OTHER_REVIEWS_RATING_STARS_FOUR_ALT' => 'Fire stjerner',
+    'OTHER_REVIEWS_RATING_STARS_THREE_ALT' => 'Tre stjerner',
+    'OTHER_REVIEWS_RATING_STARS_TWO_ALT' => 'To stjerner',
+    'OTHER_REVIEWS_RATING_STARS_ONE_ALT' => 'En stjerne',
+];
+
+return $define;
