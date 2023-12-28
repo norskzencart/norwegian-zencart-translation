@@ -1,4 +1,8 @@
 <?php
+if (!defined('SHOW_ACCEPTED_CREDIT_CARDS')) {
+    return;
+}
+global $template, $current_page_base; 
 $define = [
     'TEXT_ACCEPTED_CREDIT_CARDS' => '<strong>Vi aksepterer:</strong> ',
     'TEXT_CC_ENABLED_VISA' => 'Visa',
