@@ -1,17 +1,13 @@
 <?php
+/**
+ * @copyright Copyright 2003-2022 Zen Cart Development Team
+ * @copyright Portions Copyright 2003 osCommerce
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: Zcwilt 2020 Jun 02 New in v1.5.8-alpha $
+*/
+
 $define = [
     'HEADING_TITLE' => 'Informasjonssider for: ',
-    'NAVBAR_TITLE' => 'Endring av informasjonssider',
-    'TEXT_INFO_EDIT_PAGE' => 'Velg side som skal endres:',
-    'TEXT_INFO_MAIN_PAGE' => 'Hovedside',
-    'TEXT_INFO_SHIPPINGINFO' => 'Levering og retur',
-    'TEXT_INFO_PRIVACY' => 'Persovern',
-    'TEXT_INFO_CONDITIONS' => 'Betingelser',
-    'TEXT_INFO_CONTACT_US' => 'Kontakt oss',
-    'TEXT_INFO_CHECKOUT_SUCCESS' => 'Vellykket utsjekking',
-    'TEXT_INFO_PAGE_2' => 'Side 2',
-    'TEXT_INFO_PAGE_3' => 'Side 3',
-    'TEXT_INFO_PAGE_4' => 'Side 4',
     'TEXT_FILE_DOES_NOT_EXIST' => 'Fil eksisterer ikke: %s',
     'ERROR_FILE_NOT_WRITEABLE' => 'Feil: Jeg kan ikke skrive til denne filen. Sett riktig brukerrettigheter på: %s',
     'TEXT_INFO_SELECT_FILE' => 'Velg fil som skal endres..',

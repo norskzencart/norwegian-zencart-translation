@@ -1,16 +1,19 @@
 <?php
+/**
+ * @copyright Copyright 2003-2022 Zen Cart Development Team
+ * @copyright Portions Copyright 2003 osCommerce
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: Scott C Wilson 2022 Jan 09 New in v1.5.8-alpha $
+*/
+
 $define = [
     'HEADING_TITLE_MEDIA_MANAGER' => 'Mediabehandling',
     'TABLE_HEADING_MEDIA' => 'Samlingsnavn',
-    'TABLE_HEADING_ACTION' => 'Valg',
     'TEXT_HEADING_NEW_MEDIA_COLLECTION' => 'Ny mediasamling',
     'TEXT_NEW_INTRO' => 'Fyll inn detaljer for den nye mediasamlingen nedenfor',
     'TEXT_MEDIA_COLLECTION_NAME' => 'Mediasamlingens navn',
     'TEXT_MEDIA_EDIT_INSTRUCTIONS' => 'Bruk seksjonen ovenfor til å forandre mediasamlingens navn, deretter klikk på lagre-knappen.<br /><br />
                                         Bruk seksjonen nedenfor til å legge til eller fjerne mediaklipp fra mediasamlingen.',
-    'TEXT_DATE_ADDED' => 'agt til:',
-    'TEXT_LAST_MODIFIED' => 'Sist endret:',
-    'TEXT_PRODUCTS' => 'Lenkede produkter:',
     'TEXT_CLIPS' => 'Lenkede klipp:',
     'TEXT_NO_PRODUCTS' => 'Ingen produkter i denne kategorien',
     'TEXT_HEADING_EDIT_MEDIA_COLLECTION' => 'Endre mediasamling',

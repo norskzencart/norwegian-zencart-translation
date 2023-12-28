@@ -1,4 +1,11 @@
 <?php
+/**
+ * @copyright Copyright 2003-2022 Zen Cart Development Team
+ * @copyright Portions Copyright 2003 osCommerce
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: Scott C Wilson 2022 Jan 11 New in v1.5.8-alpha $
+*/
+
 $define = [
     'HEADING_TITLE' => 'Sideregistrering - Administratorsider',
     'TEXT_PAGE_KEY' => 'Sidenøkkel',
@@ -7,7 +14,6 @@ $define = [
     'TEXT_PAGE_PARAMS' => 'Sideparametre',
     'TEXT_MENU_KEY' => 'Meny',
     'TEXT_DISPLAY_ON_MENU' => 'Vis på menyen?',
-    'TEXT_SORT_ORDER' => 'Sortering',
     'TEXT_EXAMPLE_PAGE_KEY' => '(f.eks. myModPageName)',
     'TEXT_EXAMPLE_LANGUAGE_KEY' => '(f.eks. BOX_MY_MOD_PAGE_NAME)',
     'TEXT_EXAMPLE_MAIN_PAGE' => '(f.eks. FILENAME_PAGE_NAME)',

@@ -1,4 +1,11 @@
 <?php
+/**
+ * @copyright Copyright 2003-2023 Zen Cart Development Team
+ * @copyright Portions Copyright 2003 osCommerce
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: mc12345678 2023 Jan 16 Modified in v1.5.8a $
+*/
+
 $define = [
     'HEADING_TITLE' => 'Utviklerverktøy',
     'TABLE_CONFIGURATION_TABLE' => 'Slå opp KONSTANT-definisjoner',
@@ -20,11 +27,11 @@ $define = [
     'TEXT_INFO_MATCHES_FOUND' => 'Passende linjer som ble funnet: ',
     'TEXT_INFO_FILENAME' => 'FILNAVN: ',
     'TEXT_LANGUAGE_LOOKUPS' => 'Språkfil oppslag:',
-    'TEXT_LANGUAGE_LOOKUP_CURRENT_LANGUAGE' => 'Alle språkfiler for '.strtoupper(['language'],
-    'TEXT_LANGUAGE_LOOKUP_CURRENT_CATALOG' => 'Alle språkfiler - katalog ('.DIR_WS_CATALOG.DIR_WS_LANGUAGES.'english.php /norwegian.php osv.)',
-    'TEXT_LANGUAGE_LOOKUP_CURRENT_CATALOG_TEMPLATE' => 'Alle valgte språkfiler - '.DIR_WS_CATALOG.DIR_WS_LANGUAGES.['language'].'/*.php',
-    'TEXT_LANGUAGE_LOOKUP_CURRENT_ADMIN' => 'Alle språkfiler - Admin ('.DIR_WS_ADMIN.DIR_WS_LANGUAGES.'english.php /norwegian.php osv.)',
-    'TEXT_LANGUAGE_LOOKUP_CURRENT_ADMIN_LANGUAGE' => 'Alle valgte språkfiler - Admin ('.DIR_WS_ADMIN.DIR_WS_LANGUAGES.['language'].'/*.php)',
+    'TEXT_LANGUAGE_LOOKUP_CURRENT_LANGUAGE' => 'Alle språkfiler for '.strtoupper($_SESSION['language'],
+    'TEXT_LANGUAGE_LOOKUP_CURRENT_CATALOG' => 'Alle språkfiler - katalog ('.DIR_WS_CATALOG . DIR_WS_LANGUAGES . 'english.php /norwegian.php osv.)',
+    'TEXT_LANGUAGE_LOOKUP_CURRENT_CATALOG_TEMPLATE' => 'Alle valgte språkfiler - ' . DIR_WS_CATALOG . DIR_WS_LANGUAGES . 'language' . '/*.php',
+    'TEXT_LANGUAGE_LOOKUP_CURRENT_ADMIN' => 'Alle språkfiler - Admin ('.DIR_WS_ADMIN . DIR_WS_LANGUAGES . 'english.php /norwegian.php osv.)',
+    'TEXT_LANGUAGE_LOOKUP_CURRENT_ADMIN_LANGUAGE' => 'Alle valgte språkfiler - Admin (' . DIR_WS_ADMIN . DIR_WS_LANGUAGES . 'language' . '/*.php)',
     'TEXT_LANGUAGE_LOOKUP_CURRENT_ALL' => 'Alle eksisterende språkfiler - Katalog/Admin',
     'TEXT_FUNCTION_CONSTANT' => '<strong>Oppslagsfunksjoner eller ting i funksjonsfiler</strong>',
     'TEXT_FUNCTION_LOOKUPS' => 'Funksjonsfil oppslag:',
@@ -47,7 +54,8 @@ $define = [
     'TEXT_ALL_FILES_LOOKUP_CURRENT' => 'Alle filer - Katalog/Admin',
     'TEXT_ALL_FILES_LOOKUP_CURRENT_CATALOG' => 'Alle filer - Katalog',
     'TEXT_ALL_FILES_LOOKUP_CURRENT_ADMIN' => 'Alle filer - Admin',
-    'TEXT_INFO_NO_EDIT_AVAILABLE' => 'Ingen endring tilgjengelig',
+    'TEXT_ALL_FILES_LOOKUP_CURRENT_PLUGINS' => 'All Files - Plugins',
+    'TEXT_ALL_FILES_LOOKUP_CURRENT_LARAVEL' => 'All Files - Laravel',
     'TEXT_INFO_CONFIGURATION_HIDDEN' => ' eller gjemt',
     'TEXT_SEARCH_ALL_FILES' => 'Søk i ALLE filer etter: ',
     'TEXT_SEARCH_DATABASE_TABLES' => 'Søk i konfigurasjonstabeller i databasen etter: ',
@@ -59,6 +67,8 @@ $define = [
     'TEXT_ALL_FILES_LOOKUP_JS' => 'Bare .js',
     'TEXT_ALL_FILES_LOOKUP_ALL_TYPES' => 'Alt',
     'TEXT_CASE_SENSITIVE' => 'Skill mellom små og store bokstaver?',
+    'TEXT_INCLUDE_PLUGINS' => 'Add Plugins?',
+    'TEXT_INCLUDE_LARAVEL' => 'Add Laravel Directory?',
     'TEXT_CONTEXT_LINES' => 'Kontekstlinjer: ',
     'TEXT_SEARCH_LOOKUP_PLACEHOLDER' => 'Fyll inn søkeuttrykk eller mønster',
     'TEXT_SEARCH_KEY_PLACEHOLDER' => 'Fyll inn nøkkelnavn eller frase for søk',
