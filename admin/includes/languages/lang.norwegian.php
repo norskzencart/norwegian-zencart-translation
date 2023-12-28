@@ -1,4 +1,13 @@
 <?php
+/**
+ * @copyright Copyright 2003-2023 Zen Cart Development Team
+ * @copyright Portions Copyright 2003 osCommerce
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: Scott C Wilson 2023 Feb 16 Modified in v1.5.8a $
+*/
+
+@setlocale(LC_TIME, ['nb_NO.utf8', 'nb_NO.utf-8', 'nb_NO.UTF-8', 'no_NO.utf8', 'no_NO.utf-8', 'no_NO.UTF-8', 'nb_NO', 'no_NO', 'Norwegian_Bokmal', 'norwegian']);
+
 $define = [
     'HEADER_ALT_TEXT' => 'Administrasjonen drives av Zen Cart :: Det beste systemet for netthandel.',
     'HEADER_LOGO_WIDTH' => '200px',
@@ -6,7 +15,7 @@ $define = [
     'HEADER_LOGO_IMAGE' => 'logo.gif',
     'DATE_FORMAT_SHORT' => '%d.%m.%Y',
     'DATE_FORMAT_LONG' => '%A %d. %B %Y',
-    'DATE_FORMAT' => ,
+    'DATE_FORMAT' => 'd/m/Y',
     'PHP_DATE_TIME_FORMAT' => 'd.m.Y H:i:s',
     'DATE_TIME_FORMAT' => DATE_FORMAT_SHORT.' %H:%M:%S',
     'DATE_FORMAT_SPIFFYCAL' => 'dd.MM.yyyy',
@@ -563,5 +572,4 @@ $define = [
     'ERROR_CURRENCY_INVALID' => 'Feil: Vekslingskursen for %s (%s) ble IKKE oppdatert via %s. Det er tilsynelatende ikke en gyldig valutakode?',
     'WARNING_PRIMARY_SERVER_FAILED' => 'Advarsel: Primær server for vekslingskurs (%s) feilet for %s (%s), forsøker med sekundær server.',
 ];
-
 return $define;

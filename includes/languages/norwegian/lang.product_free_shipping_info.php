@@ -1,31 +1,5 @@
 <?php
 $define = [
-    'TEXT_PRODUCT_NOT_FOUND' => 'Beklager, produktet ble ikke funnet.',
-    'TEXT_CURRENT_REVIEWS' => 'Nåværende omtaler:',
-    'TEXT_MORE_INFORMATION' => 'For mer informasjon, besøk <a href="%s">produktets nettside</a>.',
-    'TEXT_DATE_ADDED' => 'Dette produktet ble innført i vår butikk %s.',
-    'TEXT_DATE_AVAILABLE' => '<font color="#ff0000">Dette produktet ventes på lager %s.</font>',
-    'TEXT_ALSO_PURCHASED_PRODUCTS' => 'Kunder som har kjøpt dette produktet har også kjøpt:',
-    'TEXT_PRODUCT_OPTIONS' => '<strong>Vennligst velg:</strong>',
-    'TEXT_PRODUCT_MANUFACTURER' => 'Produsent: ',
-    'TEXT_PRODUCT_WEIGHT' => 'Vekt: ',
-    'TEXT_PRODUCT_QUANTITY' => ' enheter på lager',
-    'TEXT_PRODUCT_MODEL' => 'Modell: ',
-    'PREV_NEXT_PRODUCT' => 'Produkt ',
-    'PREV_NEXT_FROM' => ' fra ',
-    'IMAGE_BUTTON_PREVIOUS' => 'Forrige',
-    'IMAGE_BUTTON_NEXT' => 'Neste',
-    'IMAGE_BUTTON_RETURN_TO_PRODUCT_LIST' => 'Tilbake til produktlisten',
-    'TEXT_ATTRIBUTES_PRICE_WAS' => ' [før: ',
-    'TEXT_ATTRIBUTE_IS_FREE' => ' nå: Gratis!]',
-    'TEXT_ONETIME_CHARGE_SYMBOL' => ' *',
-    'TEXT_ONETIME_CHARGE_DESCRIPTION' => ' Engangsgebyr kan være gjeldende',
-    'TEXT_ATTRIBUTES_QTY_PRICE_HELP_LINK' => 'Kvantumsrabatt tilgjengelig',
-    'ATTRIBUTES_QTY_PRICE_SYMBOL' => zen_image(DIR_WS_TEMPLATE_ICONS.'icon_status_green.gif',TEXT_ATTRIBUTES_QTY_PRICE_HELP_LINK,10,10,
-    'ATTRIBUTES_PRICE_DELIMITER_PREFIX' => ' ( ',
-    'ATTRIBUTES_PRICE_DELIMITER_SUFFIX' => ' )',
-    'ATTRIBUTES_WEIGHT_DELIMITER_PREFIX' => ' (',
-    'ATTRIBUTES_WEIGHT_DELIMITER_SUFFIX' => ') ',
 ];
 
 return $define;

@@ -1,10 +1,18 @@
 <?php
+// -----
+// Since the languages are now loaded via classes, the $locales definition
+// needs to be globalized for use in payment-methods (e.g. paypalwpp) and
+// other processing.
+//
+global $locales;
+$locales = ['nb_NO.utf8', 'nb_NO.utf-8', 'nb_NO.UTF-8', 'no_NO.utf8', 'no_NO.utf-8', 'no_NO.UTF-8', 'nb_NO', 'no_NO', 'Norwegian_Bokmal', 'norwegian'];
+@setlocale(LC_TIME, $locales);
+
 $define = [
-    'FOOTER_TEXT_BODY' => 'Kopirett &copy; '.date('Y',
+    'FOOTER_TEXT_BODY' => 'Kopirett &copy; '.date('Y'),
     'DATE_FORMAT_SHORT' => '%d.%m.%Y',
     'DATE_FORMAT_LONG' => '%A %d. %B %Y',
-    'DATE_FORMAT' => ,
-    'DATE_TIME_FORMAT' => DATE_FORMAT_SHORT.' %H:%M:%S',
+    'DATE_FORMAT' => 'd/m/Y',
     'LANGUAGE_CURRENCY' => 'NOK',
     'HTML_PARAMS' => 'dir="ltr" lang="nb-no"',
     'CHARSET' => 'utf-8',
@@ -12,7 +20,6 @@ $define = [
     'TEXT_GV_NAME' => 'Gavekort',
     'TEXT_GV_NAMES' => 'Gavekort',
     'TEXT_GV_REDEEM' => 'Kode:',
-    'BOX_HEADING_GV_REDEEM' => TEXT_GV_NAME,
     'BOX_GV_REDEEM_INFO' => 'Kode: ',
     'MALE' => 'Herr',
     'FEMALE' => 'Fr.',
@@ -194,8 +201,6 @@ $define = [
     'TEXT_NO_NEW_PRODUCTS' => 'Flere nye produkter kommer snart, velkommen tilbake senere.',
     'TEXT_UNKNOWN_TAX_RATE' => 'MVA.',
     'TEXT_REQUIRED' => '<span class="errorText">Påkrevd</span>',
-    'WARNING_INSTALL_DIRECTORY_EXISTS' => 'Advarsel: Installasjonskatalogen er ikke slettet enda: '..'/zc_install. Du må slette denne katalogen av sikkerhetsmessige hensyn.',
-    'WARNING_CONFIG_FILE_WRITEABLE' => 'Advarsel: Konfigurasjonsfilen er <strong>ikke</strong> skrivebeskyttet: '..'/includes/configure.php. Dette er en potensiell sikkerhetsrisiko, du må derfor angi riktige tilgangsrettigheter på denne filen.',
     'ERROR_FILE_NOT_REMOVEABLE' => 'Advarsel: Kunne ikke fjerne angitt fil. Du må kanksje bruke FTP for å fjerne filen, som følge av serverrettigheter (konfigurasjonsbegrensninger).',
     'WARNING_SESSION_AUTO_START' => 'Advarsel: \'session.auto_start\' er aktivert, deaktiver derfor denne php-funksjonen i php.ini og restart webserveren.',
     'WARNING_DOWNLOAD_DIRECTORY_NON_EXISTENT' => 'Advarsel: Katalogen for nedlastbare produkt finnes ikke: '.DIR_FS_DOWNLOAD.'. Nedlastbare produkter virker ikke inntil denne katalogen blir opprettet.',
@@ -349,11 +354,11 @@ $define = [
     'TEXT_MAXIMUM_CHARACTERS_ALLOWED' => ' max antall bokstaver som er lov.',
     'TEXT_REMAINING' => 'igjen',
     'CART_SHIPPING_OPTIONS' => 'Forhåndsberegnet leveringspris:',
-    'CART_SHIPPING_OPTIONS_LOGIN' => '<a href="'.zen_href_link(FILENAME_LOGIN,'','SSL',
+    'CART_SHIPPING_OPTIONS_LOGIN' => '<a href="'.zen_href_link(FILENAME_LOGIN),'','SSL',
     'CART_SHIPPING_METHOD_TEXT' => 'Forsendelsesmåter:',
     'CART_SHIPPING_METHOD_RATES' => 'Pris:',
     'CART_SHIPPING_METHOD_TO' => 'Send til: ',
-    'CART_SHIPPING_METHOD_TO_NOLOGIN' => 'Send til: <a href="'.zen_href_link(FILENAME_LOGIN,'','SSL',
+    'CART_SHIPPING_METHOD_TO_NOLOGIN' => 'Send til: <a href="'.zen_href_link(FILENAME_LOGIN),'','SSL',
     'CART_SHIPPING_METHOD_FREE_TEXT' => 'Gratis levering',
     'CART_SHIPPING_METHOD_ALL_DOWNLOADS' => '- Nedlastinger',
     'CART_SHIPPING_METHOD_RECALCULATE' => 'Omberegn',
@@ -400,7 +405,7 @@ $define = [
     'TABLE_HEADING_PRODUCTS' => 'Navn',
     'TABLE_HEADING_TOTAL' => 'Totalt',
     'TABLE_HEADING_PRIVACY_CONDITIONS' => 'Personvernerklæring',
-    'TEXT_PRIVACY_CONDITIONS_DESCRIPTION' => 'Du må bekrefte at du aksepterer vår personvernerklæring ved å krysse av for dette nedenfor. <a href="'.zen_href_link(FILENAME_PRIVACY,'','SSL',
+    'TEXT_PRIVACY_CONDITIONS_DESCRIPTION' => 'Du må bekrefte at du aksepterer vår personvernerklæring ved å krysse av for dette nedenfor. <a href="'.zen_href_link(FILENAME_PRIVACY),'','SSL',
     'TEXT_PRIVACY_CONDITIONS_CONFIRM' => 'Jeg har lest og akseptert personvernerklæringen deres.',
     'TABLE_HEADING_ADDRESS_DETAILS' => 'Adresseopplysninger',
     'TABLE_HEADING_PHONE_FAX_DETAILS' => 'Andre kontaktopplysninger',
