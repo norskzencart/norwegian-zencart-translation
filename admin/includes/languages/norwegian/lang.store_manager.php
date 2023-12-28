@@ -1,7 +1,13 @@
 <?php
+/**
+ * @copyright Copyright 2003-2022 Zen Cart Development Team
+ * @copyright Portions Copyright 2003 osCommerce
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: Scott C Wilson 2022 Jan 11 New in v1.5.8-alpha $
+*/
+
 $define = [
     'HEADING_TITLE' => 'Butikkbehandling',
-    'TABLE_CONFIGURATION_TABLE' => 'Slå opp KONSTANT-definisjoner',
     'SUCCESS_PRODUCT_UPDATE_SORT_ALL' => '<strong>Vellykket</strong> oppdatering av variantsortering.',
     'SUCCESS_PRODUCT_UPDATE_PRODUCTS_PRICE_SORTER' => '<strong>Vellykket</strong> oppdatering av produktprisers sorteringsverdier.',
     'SUCCESS_PRODUCT_UPDATE_PRODUCTS_VIEWED' => '<strong>Vellykket</strong> tilbakestilling av viste produkter til 0.',
@@ -20,27 +26,6 @@ $define = [
     'TEXT_MSG_NEXT_ORDER' => 'Neste ordrenummer har blitt angitt til %s',
     'TEXT_MSG_NEXT_ORDER_MAX' => 'Ut fra ekisterende ordredata vil neste ordrenummer være: %s',
     'TEXT_MSG_NEXT_ORDER_TOO_LARGE' => 'På grunn av begrensninger i database kan du ikke angi et ordrenummer som er høyere enn 2000000000. Du må velge en lavere verdi.',
-    'TEXT_CONFIGURATION_CONSTANT' => '<strong>Slå opp KONSTANT- eller språkfildefinisjon</strong>',
-    'TEXT_CONFIGURATION_KEY' => 'Nøkkel eller navn:',
-    'TEXT_INFO_CONFIGURATION_UPDATE' => '<strong>MERK: KONSTANTER er skrevet med store bokstaver.</strong> Språkfiloppslag kan være et alternativ søk når ingenting blir funnet i databasetabellene.',
-    'TEXT_CONFIGURATION_CONSTANT_FILES' => '<strong>Oppslag i språkfildefinisjoner</strong>',
-    'TEXT_CONFIGURATION_KEY_FILES' => 'Søketekst:',
-    'TEXT_INFO_CONFIGURATION_UPDATE_FILES' => '<strong>MERK:</strong> Språkfiloppslag kan være med små eller store bokstaver',
-    'TABLE_TITLE_KEY' => '<strong>Nøkkel:</strong>',
-    'TABLE_TITLE_TITLE' => '<strong>Tittel:</strong>',
-    'TABLE_TITLE_DESCRIPTION' => '<strong>Beskrivelse:</strong>',
-    'TABLE_TITLE_GROUP' => '<strong>Gruppe:</strong>',
-    'TABLE_TITLE_VALUE' => '<strong>Verdi:</strong>',
-    'TEXT_LANGUAGE_LOOKUPS' => 'Språkfiloppsalg:',
-    'TEXT_LANGUAGE_LOOKUP_NONE' => 'Ingen',
-    'TEXT_LANGUAGE_LOOKUP_CURRENT_LANGUAGE' => 'Alle språkfiler for '.strtoupper(['language'],
-    'TEXT_LANGUAGE_LOOKUP_CURRENT_CATALOG' => 'Alle hovedspråkfiler - Katalog ('.DIR_WS_CATALOG.DIR_WS_LANGUAGES.'english.php /espanol.php etc.)',
-    'TEXT_LANGUAGE_LOOKUP_CURRENT_CATALOG_TEMPLATE' => 'Alle valgte språkfiler - '.DIR_WS_CATALOG.DIR_WS_LANGUAGES.['language'].'/*.php',
-    'TEXT_LANGUAGE_LOOKUP_CURRENT_ADMIN' => 'Alle hovedspråkfiler - Admin ('.DIR_WS_ADMIN.DIR_WS_LANGUAGES.'english.php /espanol.php etc.)',
-    'TEXT_LANGUAGE_LOOKUP_CURRENT_ADMIN_LANGUAGE' => 'Alle valgte språkfiler - Admin ('.DIR_WS_ADMIN.DIR_WS_LANGUAGES.['language'].'/*.php)',
-    'TEXT_LANGUAGE_LOOKUP_CURRENT_ALL' => 'Alle valgte språkfiler - Katalog/Admin',
-    'TEXT_INFO_NO_EDIT_AVAILABLE' => 'Ingen redigering tilgjengelig',
-    'TEXT_INFO_CONFIGURATION_HIDDEN' => ' eller, SKJULT',
     'TEXT_INFO_DATABASE_OPTIMIZE' => '<strong>Optimer database</strong> for å fjerne bortkastet plass etter slettede oppføringer.<br />Kan kjøres frivillig hver måned, eller hver uke, på en travel database.<br />(Best å kjøre i stille perioder.)',
     'TEXT_INFO_OPTIMIZING_DATABASE_TABLES' => 'Optimalisering av databasetabeller kjøres. Dette kan ta noen minutter. Vennligst vent. Foregående meny vil dukke opp når kjøringen er fullført ...',
     'SUCCESS_DB_OPTIMIZE' => 'Databaseoptimalisering - Antall tabeller som ble behandlet: ',

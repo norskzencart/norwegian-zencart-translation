@@ -12,7 +12,7 @@ $define = [
     'ERROR_FILE_NOT_WRITEABLE' => 'Feil: Jeg kan ikke skrive til denne filen. Sett riktig brukerrettigheter på: %s',
     'TEXT_INFO_SELECT_FILE' => 'Velg fil som skal endres..',
     'TEXT_INFO_EDITING' => 'Fil som endres:',
-    'TEXT_INFO_CAUTION' => 'Merk: Du bør alltid endre på filer lokalisert i ditt gjeldende designs overstyrringsmappe.<br />Eksempel: /languages/'.['language'].'/html_includes/'..'<br />Husk å ta sikkerhetskopi etter at du har endret dine filer.',
+    'TEXT_INFO_CAUTION' => 'Merk: Du bør alltid endre på filer lokalisert i ditt gjeldende designs overstyrringsmappe.<br />Eksempel: /languages/' . 'language' . '/html_includes/YOUR_TEMPLATE_DIRECTORY<br />Husk å ta sikkerhetskopi etter at du har endret dine filer.',
 ];
 
 return $define;
